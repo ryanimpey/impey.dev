@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+header.site-header {
+    padding: 12px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+            color: $color-dark;
+            text-decoration: none;
+            padding: 0px 12px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

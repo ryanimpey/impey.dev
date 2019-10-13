@@ -1,0 +1,29 @@
+@import "../../styles/_variables";
+@import "../../styles/_globals";
+
+.logo-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid $color-dark;
+    transition: all 0.25s ease-in-out;
+
+    .logo-text {
+        height: inherit;
+        width: inherit;
+        font-size: 32px;
+        line-height: 32px;
+        font-family: "Raleway";
+        font-weight: 900;
+        color: $color-dark;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    &:hover {
+        background: $color-dark;
+        transform: rotate(-5deg);
+    }
+}
