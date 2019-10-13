@@ -6,9 +6,13 @@ import { Link } from "gatsby"
 const Navigation = ({ links = [] }) => {
     return (
         <nav>
-            {links.map((item: navigation_links_interface) => (
-                <Link to={item.link}>{item.name}</Link>
-            ))}
+            <ul className="navigation-container">
+                {links.map((item: navigation_links_interface) => (
+                    <li>
+                        <Link to={item.link}>{item.name}</Link>
+                    </li>
+                ))}
+            </ul>
         </nav>
     )
 }

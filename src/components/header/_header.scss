@@ -8,16 +8,27 @@ header.site-header {
 
     nav {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
 
-        a {
-            color: $color-dark;
-            text-decoration: none;
-            padding: 0px 12px;
+        .navigation-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0px;
 
-            &:hover {
-                text-decoration: underline;
+            li {
+                text-decoration: none;
+                list-style: none;
+                margin-bottom: 0px;
+
+                a {
+                    color: $color-dark;
+                    text-decoration: none;
+                    padding: 0px 12px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }
