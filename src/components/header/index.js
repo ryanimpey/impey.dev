@@ -10,7 +10,7 @@ const Header = () => (
         <Link to="/">
             <Logo />
         </Link>
-        <Navigation links={nav_links} />
+        {/* <Navigation links={nav_links} /> */}
     </header>
 )
 
