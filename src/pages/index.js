@@ -35,7 +35,7 @@ const IndexPage = () => {
     )
 }
 
-const IndexSocialLinks = ({}) => (
+const IndexSocialLinks = () => (
     <div className="social-wrapper">
         <a
             target="_blank"
