@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 
 const Header = () => (
     <header className="site-header">
-        <Link to="/">
+        <Link to="/" tabIndex="0">
             <Logo />
         </Link>
         {/* <Navigation links={nav_links} /> */}
