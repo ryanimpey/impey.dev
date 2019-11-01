@@ -21,14 +21,23 @@ const ProjectsPage = () => {
         <Layout>
             <SEO title="Projects" />
             <article
-                style={{ display: "flex", justifyContent: "space-between", maxWidth: 960, alignSelf: 'center', padding: 25 }}
+                style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    maxWidth: 960,
+                    alignSelf: "center",
+                    padding: 25,
+                }}
             >
-                <ImgChevron
-                    left={isLeft}
-                    alt="Snowboarding in Breckenridge, CO"
-                    fluid={data.image.childImageSharp.fluid}
-                />
-                <section style={{maxWidth: 600}}>
+                <aside style={{padding: 25, width: '100%'}}>
+                    <ImgChevron
+                        left={isLeft}
+                        alt="Snowboarding in Breckenridge, CO"
+                        fluid={data.image.childImageSharp.fluid}
+                        style={{ width: "100%" }}
+                    />
+                </aside>
+                <section style={{ maxWidth: 600, display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', paddingLeft: 10  }}>
                     <h2>Title</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -64,9 +73,9 @@ const imageQuery = graphql`
 export default ProjectsPage
 
 const ImgChevron = styled(Img)`
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);;
-    min-height: 200px;
-    min-width: 250px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    min-height: 150px;
+    min-width: 150px;
     max-height: 400px;
     max-width: 400px;
 
