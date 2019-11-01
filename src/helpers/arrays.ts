@@ -6,8 +6,8 @@ export interface navigation_links_interface {
 
 export const nav_links: Array<navigation_links_interface> = [
     {
-        name: "Contact",
-        link: "/contact",
+        name: "Projects",
+        link: "/projects",
     },
     /*  {
         name: "About",
