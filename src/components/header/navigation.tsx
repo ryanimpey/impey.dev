@@ -8,7 +8,7 @@ const Navigation = ({ links = [] }) => {
         <nav>
             <ul className="navigation-container">
                 {links.map((item: navigation_links_interface) => (
-                    <li>
+                    <li key={item.name}>
                         <Link to={item.link}>{item.name}</Link>
                     </li>
                 ))}
