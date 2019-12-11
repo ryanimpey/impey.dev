@@ -1,13 +1,15 @@
-export interface navigation_links_interface {
-    name: string,
-    link: string,
-    external?: string
-}
-
-export const nav_links: Array<navigation_links_interface> = [
+export const nav_links = [
     {
         name: "Projects",
         link: "/projects",
+    },
+    {
+        name: "CV",
+        link: "/cv",
+    },
+    {
+        name: "Contact",
+        link: "/contact",
     },
     /*  {
         name: "About",
