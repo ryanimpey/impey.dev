@@ -3,18 +3,32 @@ import propTypes from "prop-types";
 import { navigation_links_interface } from "../../helpers/arrays";
 import { Link } from "gatsby";
 import styled from "styled-components";
+import Nav from "../../styles/components/navigationStyle";
+
+import { FiMenu } from "react-icons/fi";
 
 const Navigation = ({ links = [] }) => {
     return (
-        <nav>
-            <NavigationContainer>
+        <Nav.OuterContainer>
+            {/* <MobileNav /> */}
+            <MobileContainer />
+            <h2>Big</h2>
+            {/* <NavigationContainer>
                 {links.map(item => (
                     <NavLi key={item.name}>
                         <Link to={item.link}>{item.name}</Link>
                     </NavLi>
                 ))}
-            </NavigationContainer>
-        </nav>
+            </NavigationContainer> */}
+        </Nav.OuterContainer>
+    );
+};
+
+const MobileContainer = ({}) => {
+    return (
+        <Nav.MobileContainer>
+            <FiMenu size={36} color="#FFF" strokeWidth={2} />
+        </Nav.MobileContainer>
     );
 };
 
@@ -39,7 +53,7 @@ const NavLi = styled.li`
 
         &:hover {
             text-decoration: underline;
-            text-decoration-color: #21A0CC;
+            text-decoration-color: #21a0cc;
         }
     }
 `;
