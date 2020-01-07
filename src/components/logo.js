@@ -1,13 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 import propTypes from "prop-types";
 import { getPaddingSize } from "../helpers";
-import styled, { ThemeContext } from "styled-components";
+import styled from "styled-components";
 
-const Logo = ({ padding = "small" }) => (
-    <LogoContainer padding={padding}>
-        <span>RI</span>
-    </LogoContainer>
-);
+const Logo = ({ padding = "small", children }) => <LogoContainer padding={padding}>{children}</LogoContainer>;
 
 const LogoContainer = styled.div`
     display: inline-flex;
@@ -22,8 +18,8 @@ const LogoContainer = styled.div`
         line-height: 32px;
         font-family: "Raleway";
         font-weight: 900;
-        color: ${props => props.theme.textColor};
-        border: 5px solid white;
+        color: ${props => props.theme.logoColor};
+        border: ${props => `5px solid ${props.theme.logoColor}`};
         padding: ${props => getPaddingSize(props.padding)};
 
         &:hover {
@@ -32,7 +28,7 @@ const LogoContainer = styled.div`
     }
 
     &:hover {
-        background: ${props => props.theme.backgroundAlt};
+        background: ${props => props.theme.logoColor};
     }
 `;
 
