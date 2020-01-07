@@ -1,14 +1,17 @@
 import React from "react";
+import Carousel from "nuka-carousel";
 import { graphql, useStaticQuery } from "gatsby";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import styled, { ThemeProvider } from "styled-components";
-import { dark_theme } from "../styles/themes";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+
+import SEO from "../components/seo";
+import Layout from "../components/layout";
 import { H1, H2, P } from "../components/headings";
-import { intro_message } from "../helpers/strings";
+
+import { dark_theme } from "../styles/themes";
 import Index from "../styles/pages/indexPageStyle";
+
+import { intro_message } from "../helpers/strings";
 import { PRIMARY_COLOR } from "../helpers/colors";
 
 const IndexPage = () => {
@@ -26,9 +29,23 @@ const IndexPage = () => {
                     <P>{intro_message}</P>
                     <SocialLinks />
                 </Index.Section>
-                <Index.Section>
+                <Index.CarouselSection className="index--carousel--section">
                     <H2>Projects</H2>
-                </Index.Section>
+                    <Carousel
+                        wrapAround
+                        className="index--carousel"
+                        renderCenterLeftControls={() => null}
+                        renderCenterRightControls={() => null}
+                        beforeSlide={(curr, end) => console.log(curr, end)}
+                    >
+                        <img src="https://via.placeholder.com/376x188/ffffff/c0392b" />
+                        <img src="https://via.placeholder.com/376x188/ffffff/c0392b" />
+                        <img src="https://via.placeholder.com/376x188/ffffff/c0392b" />
+                        <img src="https://via.placeholder.com/376x188/ffffff/c0392b" />
+                        <img src="https://via.placeholder.com/376x188/ffffff/c0392b" />
+                        <img src="https://via.placeholder.com/376x188/ffffff/c0392b" />
+                    </Carousel>
+                </Index.CarouselSection>
             </Layout>
         </ThemeProvider>
     );
