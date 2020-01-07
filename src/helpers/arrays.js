@@ -79,13 +79,13 @@ export const projects = [
         description:
             "A University of Lincoln based project helping students find free/unused computers in campus buildings.",
         skills: ["Leaflet", "GeoJSON", "HTML5", "Bootstrap", ".NET"],
-        image: navigateme_poster,
+        image: findapc_poster,
     },
     {
         name: "Navigate-Me",
         description:
             "A University of Lincoln based project helping students navigate around the campus by providing pathfinding with an interactive map.",
         skills: ["Leaflet", "GeoJSON", "HTML5", "Bootstrap", ".NET"],
-        image: findapc_poster,
+        image: navigateme_poster,
     },
 ];
