@@ -1,57 +1,48 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
-import "../styles/pages/_index.scss"
-
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi"
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import styled, { ThemeProvider } from "styled-components";
+import { dark_theme } from "../styles/themes";
+import { H1, H2, P } from "../components/headings";
+import { intro_message } from "../helpers/strings";
+import Index from "../styles/pages/indexPageStyle";
+import { PRIMARY_COLOR } from "../helpers/colors";
 
 const IndexPage = () => {
-    const data = useStaticQuery(imageQuery)
-    console.log(data)
-
+    const data = useStaticQuery(imageQuery);
     return (
-        <Layout>
-            <SEO title="Home" />
-            <main className="index-page">
-                <section>
-                    <h1>Hi there!</h1>
-                    <div className="text-wrapper">
-                        <p>
-                            I'm sorry, but this site is still a work in
-                            progress. If you'd like to find out more or contact
-                            me you can use the links below.
-                        </p>
-                    </div>
-                    <IndexSocialLinks />
-                </section>
-                <section className="image-wrapper">
-                    <Img alt="Snowboarding in Breckenridge, CO" style={{borderTopLeftRadius: 15, borderBottomLeftRadius: 15}} fluid={data.image.childImageSharp.fluid} />
-                </section>
-            </main>
-        </Layout>
-    )
-}
+        <ThemeProvider theme={dark_theme}>
+            <Layout>
+                <SEO title="Home" />
+                <Index.Section>
+                    <H1>
+                        Hello,
+                        <br />
+                        I'm Ryan.
+                    </H1>
+                    <P>{intro_message}</P>
+                    <SocialLinks />
+                </Index.Section>
+                <Index.Section>
+                    <H2>Projects</H2>
+                </Index.Section>
+            </Layout>
+        </ThemeProvider>
+    );
+};
 
-const IndexSocialLinks = () => (
-    <div className="social-wrapper">
+const SocialLinks = () => (
+    <Index.LinkContainer>
         <a
             tabIndex="0"
             target="_blank"
             href="https://github.com/ryanimpey"
             rel="noopener noreferrer"
         >
-            <FiGithub size={24} color="#21A0CC" />
-        </a>
-        <a
-            tabIndex="0"
-            target="_blank"
-            href="https://www.linkedin.com/in/ryan-impey-259a7874/"
-            rel="noopener noreferrer"
-        >
-            <FiLinkedin size={24} color="#21A0CC" />
+            <FiGithub size={24} color={PRIMARY_COLOR} strokeWidth={1} />
         </a>
         <a
             tabIndex="0"
@@ -59,10 +50,18 @@ const IndexSocialLinks = () => (
             href="mailto:ryanimpey@**NOSPAM**live.co.uk"
             rel="noopener noreferrer"
         >
-            <FiMail size={24} color="#21A0CC" />
+            <FiMail size={24} color={PRIMARY_COLOR} strokeWidth={1} />
         </a>
-    </div>
-)
+        <a
+            tabIndex="0"
+            target="_blank"
+            href="https://www.linkedin.com/in/ryan-impey-259a7874/"
+            rel="noopener noreferrer"
+        >
+            <FiLinkedin size={24} color={PRIMARY_COLOR} strokeWidth={1} />
+        </a>
+    </Index.LinkContainer>
+);
 
 const imageQuery = graphql`
     query retrieveMainImage {
@@ -75,6 +74,6 @@ const imageQuery = graphql`
             }
         }
     }
-`
+`;
 
-export default IndexPage
+export default IndexPage;
