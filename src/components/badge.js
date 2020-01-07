@@ -17,7 +17,7 @@ const Badge = styled.div`
     border-radius: 5px;
     height: 24px;
     margin: 4px;
-    padding: 0px 8px;
+    padding: 0px 4px;
     min-width: 64px;
 `;
 
