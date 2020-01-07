@@ -1,11 +1,11 @@
 export function getPaddingSize(size = "small") {
     switch (size) {
         case "large":
-            return "padding-large"
+            return "24px"
         case "medium":
-            return "padding-medium"
+            return "18px"
         case "small":
         default:
-            return "padding-small"
+            return "12px"
     }
 }
