@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -15,10 +15,14 @@ import Footer from "./footer";
 import "normalize.css";
 import "../styles/global.css";
 import { ThemeProvider } from "styled-components";
-import { dark_theme } from "../styles/themes";
-import { Container } from "../styles/components/layoutStyle";
+import { dark_theme, light_theme } from "../styles/themes";
+import { Container, ThemeContainer } from "../styles/components/layoutStyle";
+import { FiMoon, FiSun } from "react-icons/fi";
+import Toggle from "./toggle";
 
 const Layout = ({ children }) => {
+    const [isDarkTheme, toggleDarkTheme] = useState(true);
+
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
             site {
@@ -30,10 +34,15 @@ const Layout = ({ children }) => {
     `);
 
     return (
-        <ThemeProvider theme={dark_theme}>
+        <ThemeProvider theme={isDarkTheme ? dark_theme : light_theme}>
             <Header siteTitle={data.site.siteMetadata.title} />
-            <Container>{children}</Container>
+            <ThemeContainer>
+                <Container>{children}</Container>
+            </ThemeContainer>
             <Footer />
+            <Toggle onClick={() =>toggleDarkTheme(!isDarkTheme)}>
+                {isDarkTheme ? <FiSun size={28} strokeWidth={2} /> : <FiMoon size={28} strokeWidth={3} />}
+            </Toggle>
         </ThemeProvider>
     );
 };
