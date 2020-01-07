@@ -6,7 +6,6 @@ module.exports = {
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
-        `gatsby-plugin-sass`,
         `gatsby-plugin-styled-components`,
         {
             resolve: `gatsby-source-filesystem`,
@@ -17,7 +16,6 @@ module.exports = {
         },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
-        `gatsby-plugin-typescript`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
