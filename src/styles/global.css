@@ -1,6 +1,5 @@
 html,
 body,
-main,
 #___gatsby,
 #gatsby-focus-wrapper {
     height: 100%;
@@ -21,7 +20,10 @@ main {
         sans-serif;
 }
 
-
 .slider-slide {
     max-height: 476px;
+}
+
+.margin--top--none {
+    margin-top: 0px;
 }

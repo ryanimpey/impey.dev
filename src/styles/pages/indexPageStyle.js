@@ -13,6 +13,7 @@ const Section = styled.section`
 const CarouselSection = styled(Section)`
     .slider.index--carousel {
         display: none !important;
+        margin-bottom: 16px;
     }
 
     @media screen and (max-width: 960px) {
@@ -22,8 +23,22 @@ const CarouselSection = styled(Section)`
     }
 `;
 
+const BadgeHolder = styled.div`
+    margin-top: 8px;
+
+    span {
+        margin-right: 8px;
+    }
+`;
+
+const ListContainer = styled.ul`
+    list-style: none;
+`;
+
 export default {
     Section,
+    BadgeHolder,
     LinkContainer,
+    ListContainer,
     CarouselSection,
 };

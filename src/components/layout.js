@@ -10,6 +10,7 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./header/header";
+import Footer from "./footer";
 
 import "normalize.css";
 import "../styles/global.css";
@@ -32,6 +33,7 @@ const Layout = ({ children }) => {
         <ThemeProvider theme={dark_theme}>
             <Header siteTitle={data.site.siteMetadata.title} />
             <Container>{children}</Container>
+            <Footer />
         </ThemeProvider>
     );
 };
