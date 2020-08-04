@@ -108,10 +108,17 @@ const IndexPage = () => {
 
 const SocialLinks = () => (
     <Index.LinkContainer>
-        <a tabIndex="0" target="_blank" href="https://github.com/ryanimpey" rel="noopener noreferrer">
+        <a
+            data-goatcounter-click="ext-github.com"
+            tabIndex="0"
+            target="_blank"
+            href="https://github.com/ryanimpey"
+            rel="noopener noreferrer"
+        >
             <FiGithub size={24} color={PRIMARY_COLOR} strokeWidth={1} />
         </a>
         <a
+            data-goatcounter-click="ext-linkedin.com"
             tabIndex="0"
             target="_blank"
             href="https://www.linkedin.com/in/ryan-impey-259a7874/"
