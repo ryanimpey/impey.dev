@@ -35,7 +35,7 @@ module.exports = {
             resolve: `gatsby-plugin-goatcounter`,
             options: {
               // REQUIRED! https://[my_code].goatcounter.com
-              code: 'ryanimpey';
+              code: 'ryanimpey',
        
               // Delays sending pageview hits on route update (in milliseconds)
               pageTransitionDelay: 0,
