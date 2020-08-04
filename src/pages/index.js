@@ -111,9 +111,6 @@ const SocialLinks = () => (
         <a tabIndex="0" target="_blank" href="https://github.com/ryanimpey" rel="noopener noreferrer">
             <FiGithub size={24} color={PRIMARY_COLOR} strokeWidth={1} />
         </a>
-        <a tabIndex="0" target="_blank" href="mailto:ryanimpey@**NOSPAM**live.co.uk" rel="noopener noreferrer">
-            <FiMail size={24} color={PRIMARY_COLOR} strokeWidth={1} />
-        </a>
         <a
             tabIndex="0"
             target="_blank"
