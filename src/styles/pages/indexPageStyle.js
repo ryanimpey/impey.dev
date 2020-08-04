@@ -4,7 +4,7 @@ const LinkContainer = styled.div`
     padding-top: 16px;
     display: flex;
     justify-content: space-between;
-    width: 96px;
+    width: 64px;
 `;
 
 const Section = styled.section`
