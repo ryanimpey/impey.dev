@@ -3,8 +3,8 @@ import temmt_poster from "../images/posters/temmt.png";
 import skipper_poster from "../images/posters/skipper.png";
 import wstraining_poster from "../images/posters/wstraining.jpg";
 import talkable_poster from "../images/posters/talkable.png";
-import navigateme_poster from "../images/posters/navigateme.png";
-import findapc_poster from "../images/posters/findapc.png";
+import navigateme_poster from "../images/posters/navigateme.jpg";
+import findapc_poster from "../images/posters/findapc.jpg";
 
 export const nav_links = [
     {
@@ -23,27 +23,29 @@ export const nav_links = [
 
 export const experiences = [
     {
-        title: "Student Associate Developer",
-        location: "University of Lincoln",
-        duration: "(January 2017 - May 2018)",
+        title: "Associate Software Developer",
+        location: "Sky Ltd.",
+        duration: "(September 2020 - Present)"
     },
     {
         title: "Full Stack JavaScript Developer",
-        location: "Element Softworks (Placement)",
-        duration: "(June 2018 - September 2019)",
+        location: "Element Softworks",
+        duration: "(March 2018 - September 2020)",
     },
     {
         title: "Student Associate Developer",
         location: "University of Lincoln",
-        duration: "(October 2019 - Present)",
+        duration: "(December 2016 - June 2018)",
     },
 ];
 
 export const certifications = [
-    "MTA: HTML5 Application Development Fundamentals",
-    "MTA: Introduction to Programming Using JavaScript",
-    "MTA: Networking Fundamentals",
-    "MTA: Database Fundamentals",
+    "Microsoft Certified - Azure Fundamentals",
+    "MTA - Security Fundamentals",
+    "MTA - HTML5 Application Development Fundamentals",
+    "MTA - Introduction to Programming Using JavaScript",
+    "MTA - Networking Fundamentals",
+    "MTA - Database Fundamentals",
 ];
 
 export const projects = [

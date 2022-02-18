@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Carousel from "nuka-carousel";
-import { ThemeProvider } from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import { FiGithub, FiLinkedin, FiMail, FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { GrGithub, GrLinkedin } from "react-icons/gr";
 import { Grid, Row, Col } from "react-flexbox-grid";
 
 import SEO from "../components/seo";
@@ -37,7 +38,11 @@ const IndexPage = () => {
                     <SocialLinks />
                 </Index.IntroSection>
                 <Index.CarouselSection>
-                    <H2>Projects</H2>
+                    <div className="container">
+                        <div className="row">
+                            <H2>Projects</H2>
+                        </div>
+                    </div>
                     <div className="index--carousel--container">
                         <Carousel
                             wrapAround
@@ -57,7 +62,7 @@ const IndexPage = () => {
                         <H3>{projects[currProject].name}</H3>
                         <P className="margin--top--none">{projects[currProject].description}</P>
                         <Index.BadgeHolder>
-                            {projects[currProject].skills.map(skill => (
+                            {projects[currProject].skills.map((skill) => (
                                 <Badge key={skill}>{skill}</Badge>
                             ))}
                         </Index.BadgeHolder>
@@ -68,9 +73,11 @@ const IndexPage = () => {
                                 <Col md={4} style={{ marginBottom: 16 }}>
                                     <Index.ProjectImage src={image} />
                                     <H3>{name}</H3>
-                                    <P>{description}</P>
+                                    <DescP>
+                                        <P>{description}</P>
+                                    </DescP>
                                     <Index.BadgeHolder>
-                                        {skills.map(skill => (
+                                        {skills.map((skill) => (
                                             <Badge key={skill}>{skill}</Badge>
                                         ))}
                                     </Index.BadgeHolder>
@@ -106,6 +113,10 @@ const IndexPage = () => {
     );
 };
 
+const DescP = styled.div`
+    min-height: 64px;
+`;
+
 const SocialLinks = () => (
     <Index.LinkContainer>
         <a
@@ -114,8 +125,8 @@ const SocialLinks = () => (
             target="_blank"
             href="https://github.com/ryanimpey"
             rel="noopener noreferrer"
-        >
-            <FiGithub size={24} color={PRIMARY_COLOR} strokeWidth={1} />
+            aria-label="Linkedin Link">
+            <GrGithub size={24} color={PRIMARY_COLOR} name="Linkedin Link" />
         </a>
         <a
             data-goatcounter-click="ext-linkedin.com"
@@ -123,8 +134,9 @@ const SocialLinks = () => (
             target="_blank"
             href="https://www.linkedin.com/in/ryan-impey-259a7874/"
             rel="noopener noreferrer"
+            aria-label="Github Link"
         >
-            <FiLinkedin size={24} color={PRIMARY_COLOR} strokeWidth={1} />
+            <GrLinkedin size={24} color={PRIMARY_COLOR} name="Github Link" />
         </a>
     </Index.LinkContainer>
 );

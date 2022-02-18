@@ -21,7 +21,6 @@ const LogoContainer = styled.div`
         color: ${props => props.theme.logoColor};
         border: ${props => `5px solid ${props.theme.logoColor}`};
         padding: ${props => getPaddingSize(props.padding)};
-        text-decoration: none;
 
         &:hover {
             color: ${props => props.theme.textColorAlt};

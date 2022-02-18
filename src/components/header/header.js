@@ -6,12 +6,11 @@ import styled from "styled-components";
 const Header = props => (
     <HeaderThemeContainer>
         <HeaderContainer>
-            <Link to="/" tabIndex="0">
+            <Link style={{textDecoration: 'none'}} to="/" tabIndex="0">
                 <Logo>
                     <span>RI</span>
                 </Logo>
             </Link>
-            {/* <Navigation links={nav_links} /> */}
         </HeaderContainer>
     </HeaderThemeContainer>
 );
