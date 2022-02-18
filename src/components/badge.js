@@ -12,12 +12,12 @@ const Badge = styled.div`
     align-items: center;
     background-color: ${PRIMARY_COLOR};
     color: white;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 700;
     border-radius: 5px;
     height: 24px;
     margin: 4px;
-    padding: 0px 4px;
+    padding: 4px 6px;
     min-width: 64px;
 `;
 

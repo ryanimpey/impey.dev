@@ -1,3 +1,1 @@
-export const intro_message = `I’m a computer science undergraduate at the
-University of Lincoln with industry experience as a
-full stack JavaScript developer.`;
+export const intro_message = `University of Lincoln graduate with a BSc in Computer Science. Currently working as a software engineer with Sky.`;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Toggle = ({ children, onClick }) => <ToggleContainer onClick={onClick}>{children}</ToggleContainer>;
+const Toggle = ({ children, onClick }) => <ToggleContainer aria-label="Night mode toggle" onClick={onClick}>{children}</ToggleContainer>;
 
 const ToggleContainer = styled.button`
     position: fixed;
