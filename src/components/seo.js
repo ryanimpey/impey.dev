@@ -77,6 +77,7 @@ function SEO({ description, lang, meta, title }) {
                 href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap"
                 rel="stylesheet"
             />
+            <script data-host="https://app.microanalytics.io" data-dnt="false" src="https://app.microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer />
         </Helmet>
     );
 }

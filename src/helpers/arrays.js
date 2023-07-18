@@ -23,8 +23,8 @@ export const nav_links = [
 
 export const experiences = [
     {
-        title: "Associate Software Developer",
-        location: "Sky Ltd.",
+        title: "Software Developer",
+        location: "Sky (Brentwood)",
         duration: "(September 2020 - Present)"
     },
     {

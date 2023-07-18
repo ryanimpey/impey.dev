@@ -120,8 +120,6 @@ const DescP = styled.div`
 const SocialLinks = () => (
     <Index.LinkContainer>
         <a
-            data-goatcounter-click="ext-github.com"
-            tabIndex="0"
             target="_blank"
             href="https://github.com/ryanimpey"
             rel="noopener noreferrer"
@@ -129,7 +127,6 @@ const SocialLinks = () => (
             <GrGithub size={24} color={PRIMARY_COLOR} name="Linkedin Link" />
         </a>
         <a
-            data-goatcounter-click="ext-linkedin.com"
             tabIndex="0"
             target="_blank"
             href="https://www.linkedin.com/in/ryan-impey-259a7874/"
