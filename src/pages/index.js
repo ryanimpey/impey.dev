@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import Carousel from "nuka-carousel";
 import styled, { ThemeProvider } from "styled-components";
-import { FiGithub, FiLinkedin, FiMail, FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { GrGithub, GrLinkedin } from "react-icons/gr";
 import { Grid, Row, Col } from "react-flexbox-grid";
 
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import Badge from "../components/badge";
 import Layout from "../components/layout";
 import ListItem from "../components/list";
-import { H1, H2, H3, H4, P } from "../components/headings";
+import { H1, H2, H3, H4, LocationP, P } from "../components/headings";
 
 import { dark_theme } from "../styles/themes";
 import Index from "../styles/pages/indexPageStyle";
@@ -27,7 +27,7 @@ const IndexPage = () => {
     return (
         <ThemeProvider theme={dark_theme}>
             <Layout>
-                <SEO title="Home" />
+                <Seo title="Home" />
                 <Index.IntroSection>
                     <H1>
                         Hello,
@@ -56,10 +56,11 @@ const IndexPage = () => {
                             beforeSlide={updateCurrentProject}
                         >
                             {projects.map(({ image, name }, index) => (
-                                <img alt={name} src={image} key={String(index)} />
+                                <img loading="lazy" alt={name} src={image} key={String(index)} />
                             ))}
                         </Carousel>
-                        <H3>{projects[currProject].name}</H3>
+                        {/* eslint-disable-next-line */}
+                        {projects[currProject].link === null ? <H3>{projects[currProject].name}</H3> : <a className="decoration-none" href={projects[currProject].link} target="_blank"></a>}
                         <P className="margin--top--none">{projects[currProject].description}</P>
                         <Index.BadgeHolder>
                             {projects[currProject].skills.map((skill) => (
@@ -69,10 +70,11 @@ const IndexPage = () => {
                     </div>
                     <Grid style={{ paddingLeft: 0, paddingRight: 0 }} className="index--projectgrid-container">
                         <Row style={{ marginTop: 16 }}>
-                            {projects.map(({ name, description, skills, image }) => (
-                                <Col md={4} style={{ marginBottom: 16 }}>
-                                    <Index.ProjectImage src={image} />
-                                    <H3>{name}</H3>
+                            {projects.map(({ name, description, skills, image, link }) => (
+                                <Col md={4} style={{ marginBottom: 16 }} key={name}>
+                                    <Index.ProjectImage src={image} loading="lazy" alt={`Project logo for ${name}. ${description}`} />
+                                    {/* eslint-disable-next-line */}
+                                    {link === null ? <H3>{name}</H3> : <a className="decoration-none" href={link} target="_blank"><H3>{name}</H3></a>}
                                     <DescP>
                                         <P>{description}</P>
                                     </DescP>
@@ -89,11 +91,12 @@ const IndexPage = () => {
                 <Index.Section>
                     <H2>Experience</H2>
                     <Index.ListContainer>
-                        {experiences.map(({ title, location, duration }, index) => (
+                        {experiences.map(({ title, location, description, duration }, index) => (
                             <ListItem key={String(index)}>
                                 <H4>{title}</H4>
-                                <P>{location}</P>
-                                <small>{duration}</small>
+                                <LocationP>{location}</LocationP>
+                                <P style={{maxWidth: "768px"}}>{description}</P>
+                                <LocationP><em>{duration}</em></LocationP>
                             </ListItem>
                         ))}
                     </Index.ListContainer>

@@ -1,10 +1,25 @@
 module.exports = {
     siteMetadata: {
         title: `Ryan Impey`,
-        description: `Portfolio page for Ryan Impey - Junior fullstack developer with industry experience in the Javascript Ecosystem`,
+        description: `Ryan Impey - Software developer based in Essex. Embedded C software engineer at Sky with experience as a fullstack Javascript & React Developer`,
         author: `ryanimpey - Github`,
+        siteUrl: `https://impey.dev/`,
     },
     plugins: [
+        `gatsby-plugin-robots-txt`,
+        {
+            resolve: `gatsby-plugin-sitemap`,
+            options: {
+                serialize: ({ path }) => {
+                    return {
+                      url: path,
+                      lastmod: new Date().toISOString(),
+                    }
+                },
+            }
+        }
+        ,
+        `gatsby-plugin-image`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-styled-components`,
         {
