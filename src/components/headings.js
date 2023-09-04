@@ -34,14 +34,24 @@ export const H4 = styled.h4`
     margin: 0px 0px 0.5rem 0px;
 `;
 
+export const LocationP = styled.p`
+    color: ${props => props.theme.textColor};
+    line-height: 20px;
+    padding-bottom: 4px;
+    font-size: 0.8em;
+    margin: 0px 0px 0.5rem 0px;
+`;
+
 export const P = styled.p`
     color: ${props => props.theme.textColor};
     line-height: 20px;
     margin: 0px 0px 0.5rem 0px;
+    padding-bottom: 4px;
 `;
 
 H1.defaultProps = defaultProps;
 H2.defaultProps = defaultProps;
 H3.defaultProps = defaultProps;
 H3.defaultProps = defaultProps;
+LocationP.defaultProps = defaultProps;
 P.defaultProps = defaultProps;

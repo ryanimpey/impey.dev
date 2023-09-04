@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <FooterContainer>
             <div>
-                <span>© 2020 Ryan Impey. Built with Gatsby</span>
+                <span>© {new Date().getFullYear()} Ryan Impey. Built with Gatsby</span>
             </div>
         </FooterContainer>
     );

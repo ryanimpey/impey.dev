@@ -8,7 +8,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Script } from "gatsby";
 
 function SEO({ description, lang, meta, title }) {
     const { site } = useStaticQuery(
@@ -69,15 +69,13 @@ function SEO({ description, lang, meta, title }) {
                 },
             ].concat(meta)}
         >
-            <link
-                href="https://fonts.googleapis.com/css?family=Raleway:900&display=swap"
-                rel="stylesheet"
-            />
-            <link
-                href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap"
-                rel="stylesheet"
-            />
-            <script data-host="https://app.microanalytics.io" data-dnt="false" src="https://app.microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer />
+            <meta name="keywords" content="Software Engineer, Developer, Essex, JavaScript, React, React Native" />
+            <meta name="author" content="Ryan Impey" />
+            <meta name="robots" content="index, follow" />
+            <link rel="canonical" href="https://impey.dev" />
+            <link rel="stylesheet preload prefetch" as="style" href="https://fonts.googleapis.com/css?family=Raleway:900&display=swap" type="text/css" />
+            <link rel="stylesheet preload prefetch" as="style" href="https://fonts.googleapis.com/css?family=Open+Sans:500,700,900&display=swap" type="text/css" />
+            <Script data-host="https://app.microanalytics.io" data-dnt="false" src="https://app.microanalytics.io/js/script.js" id="ZwSg9rf6GA" strategy="post-hydrate" />
         </Helmet>
     );
 }

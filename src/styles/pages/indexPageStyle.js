@@ -56,7 +56,7 @@ const ProjectImage = styled.img`
     margin-bottom: 16px;
 `;
 
-export default {
+const exports = {
     Section,
     BadgeHolder,
     IntroSection,
@@ -65,3 +65,5 @@ export default {
     ListContainer,
     CarouselSection,
 };
+
+export default exports;

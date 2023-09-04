@@ -20,3 +20,7 @@ main {
 .margin--top--none {
     margin-top: 0px;
 }
+
+.decoration-none {
+    text-decoration: none;
+}
