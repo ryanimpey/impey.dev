@@ -8,12 +8,21 @@ module.exports = {
     plugins: [
         `gatsby-plugin-robots-txt`,
         {
+            resolve: "gatsby-plugin-simple-analytics",
+            options: {
+                trackPageViews: true,
+                events: true,
+                eventsGlobal: "sa_event",
+                ignorePages: ["pathname"],
+            },
+        },
+        {
             resolve: `gatsby-plugin-sitemap`,
             options: {
                 serialize: ({ path }) => {
                     return {
-                      url: path,
-                      lastmod: new Date().toISOString(),
+                        url: path,
+                        lastmod: new Date().toISOString(),
                     }
                 },
             }
