@@ -1,0 +1,123 @@
+---
+import SocialList from "@/components/SocialList.astro";
+import PostPreview from "@/components/blog/PostPreview.astro";
+import PageLayout from "@/layouts/Base.astro";
+import { twMerge } from "tailwind-merge";
+import { getAllPosts, sortMDByDate } from "@/utils";
+
+const MAX_POSTS = 10;
+const allPosts = await getAllPosts();
+const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
+
+type ProjectList = {
+    title: string;
+    emoji: string;
+    desc: string;
+    href: string;
+    // year: string;
+};
+
+const presentProjectList: ProjectList[] = [
+    {
+        title: "Index Igniter",
+        emoji: "🔥",
+        desc: "An automated search engine indexing and ranking assistant",
+        href: "https://indexigniter.com/",
+    },
+    {
+        title: "LocalHousePrices",
+        emoji: "🏡",
+        desc: "Detailed insights into house prices across the United Kingdom",
+        href: "https://localhouseprices.co.uk",
+    },
+    {
+        title: "Merlin Cloud",
+        emoji: "🪄",
+        desc: "Intelligent and interactive digital campaigns for retail spaces",
+        href: "https://blueandbear.com",
+    },
+    {
+        title: "Blue & Bear",
+        emoji: "🇬🇧",
+        desc: "Luxury British accessories for dogs and puppies, designed in the UK",
+        href: "https://blueandbear.com",
+    },
+];
+
+const pastProjectList: ProjectList[] = [
+    {
+        title: "Skipper My Boat",
+        emoji: "⛵️",
+        desc: "Peer to peer boat rental platform with over 30,000 boats",
+        href: "https://and-element.com/projects/skipper-my-boat",
+    },
+    {
+        title: "Find-A-PC",
+        emoji: "🖥️",
+        desc: "Helping University of Lincoln students find available computers",
+        href: "https://findapc.lincoln.ac.uk/",
+    },
+    {
+        title: "Navigate Me",
+        emoji: "🗺️",
+        desc: "Helping to navigate students around the University of Lincoln campus ",
+        href: "https://navigateme.lincoln.ac.uk/",
+    }
+];
+---
+
+<PageLayout meta={{ title: "Home" }}>
+    <section>
+        <h1 class="title mb-6">Projects</h1>
+        <p class="mb-4">
+            An overview of past and present projects. My go-to tech stack is currently <a
+                href="https://remix.run/"
+                target="_blank"
+                rel="noopener">Remix</a
+            > with a <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> backend, which runs a Postgresql
+            database and Deno powered edge functions.
+        </p>
+    </section>
+    <section class="mt-16">
+        <h2 class="title mb-4 text-xl">Present</h2>
+        <dl class="space-y-4">
+            {
+                presentProjectList.map(({ title, desc, href, emoji }) => (
+                    <div class="flex flex-col gap-2 md:flex-row">
+                        <dt>
+                            <span class="flex">
+                                <span class="pr-1">{emoji}</span>
+                                <a class="cactus-link" href={href} target="_blank">
+                                    {title}
+                                </a>
+                                :
+                            </span>
+                        </dt>
+                        <dd>{desc}</dd>
+                    </div>
+                ))
+            }
+        </dl>
+    </section>
+    <section aria-label="Blog post list" class="mt-16">
+        <h2 class="title mb-4 text-xl">Past</h2>
+        <dl class="space-y-4">
+            {
+                pastProjectList.map(({ title, desc, href, emoji }) => (
+                    <div class="flex flex-col gap-2 md:flex-row">
+                        <dt>
+                            <span class="flex">
+                                <span class="pr-1">{emoji}</span>
+                                <a class="cactus-link" href={href} target="_blank">
+                                    {title}
+                                </a>
+                                :
+                            </span>
+                        </dt>
+                        <dd>{desc}</dd>
+                    </div>
+                ))
+            }
+        </dl>
+    </section>
+</PageLayout>
