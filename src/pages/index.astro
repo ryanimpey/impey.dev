@@ -17,10 +17,6 @@ type TechList_T = {
 
 const cactusTech: TechList_T[] = [
     {
-        icon: "devicon-c-plain",
-        desc: "C Programming Language",
-    },
-    {
         icon: "devicon-embeddedc-plain",
         desc: "Embedded C Programming",
     },
@@ -90,7 +86,7 @@ const cactusTech: TechList_T[] = [
             within the JavaScript/TypeScript ecosystem now, but I also use Rust, Python, and other assorted
             technologies.
         </p>
-        <dl class="flex items-center gap-x-3">
+        <dl class="flex items-center gap-x-3 max-w-52 sm:max-w-full flex-wrap">
             {
                 cactusTech.map(({ desc, icon }) => (
                     <dt>
