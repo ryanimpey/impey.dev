@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://impey.dev/sitemap-index.xml
-Host: https://impey.dev
+
+Sitemap: https://astro-cactus.chriswilliams.dev/sitemap-index.xml
