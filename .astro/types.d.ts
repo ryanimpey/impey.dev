@@ -199,13 +199,6 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"long-title.md": {
-	id: "long-title.md";
-  slug: "long-title";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".md"] };
 "markdown-elements/index.md": {
 	id: "markdown-elements/index.md";
   slug: "markdown-elements";
@@ -213,23 +206,9 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"missing-content.md": {
-	id: "missing-content.md";
-  slug: "missing-content";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".md"] };
 "social-image.md": {
 	id: "social-image.md";
   slug: "social-image";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".md"] };
-"unique-tags.md": {
-	id: "unique-tags.md";
-  slug: "unique-tags";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">

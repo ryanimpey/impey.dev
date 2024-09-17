@@ -18,70 +18,107 @@ type ProjectList = {
 };
 
 const presentProjectList: ProjectList[] = [
-{
+    {
         title: "Blue & Bear",
         emoji: "🐶",
-        desc: "Beautifully illustrated & naturally inspired dog accessories!",
+        desc: "Beautifully illustrated & naturally inspired dog accessories.",
         href: "https://blueandbear.com",
     },
     {
         title: "Index Igniter",
         emoji: "🔥",
-        desc: "An automated search engine indexing and ranking assistant",
+        desc: "An automated search engine indexing and ranking assistant.",
         href: "https://indexigniter.com/",
     },
     {
         title: "Link Catch",
         emoji: "🥅",
-        desc: "URL Shortner with built in analytics and conditional routing",
+        desc: "URL Shortner with built in analytics and conditional routing.",
         href: "https://linkcat.ch/",
     },
     {
         title: "LocalHousePrices",
         emoji: "🏡",
-        desc: "Detailed insights into house prices across the United Kingdom",
+        desc: "Detailed insights into house prices across the United Kingdom.",
         href: "https://localhouseprices.co.uk",
-    },
-    {
-        title: "Merlin Cloud",
-        emoji: "🪄",
-        desc: "Intelligent and interactive digital campaigns for retail spaces",
-        href: "https://merlincloud.ai/",
     },
 ];
 
 const pastProjectList: ProjectList[] = [
     {
+        title: "TranslateShorts",
+        emoji: "💬",
+        desc: "Short form video translator using Remotion and AWS.",
+        href: "https://impey.dev",
+    },
+    {
+        title: "IconCraft",
+        emoji: "🔮",
+        desc: "OpenAI DALL-E App Icon Generator built with React",
+        href: "https://impey.dev",
+    },
+    {
+        title: "CommodityChat",
+        emoji: "📦",
+        desc: "Pinecone/OpenAI Embeddings for quicker HSC classification",
+        href: "https://impey.dev",
+    },
+    {
+        title: "Absences",
+        emoji: "🏝️",
+        desc: "Employee absence and holiday management SaaS platform.",
+        href: "https://impey.dev",
+    },
+    {
         title: "Skipper My Boat",
         emoji: "⛵️",
-        desc: "Peer to peer boat rental platform with over 30,000 boats",
+        desc: "Peer to peer boat rental platform with over 30,000 boats.",
         href: "https://and-element.com/projects/skipper-my-boat",
     },
     {
         title: "Find-A-PC",
         emoji: "🖥️",
-        desc: "Helping University of Lincoln students find available computers",
+        desc: "Helping University of Lincoln students find available computers.",
         href: "https://findapc.lincoln.ac.uk/",
     },
     {
-        title: "Navigate Me",
+        title: "Eco Trips",
+        emoji: "🏆",
+        desc: "Calculate the Co2 of your trips (Lincoln Hack Winner)",
+        href: "https://impey.dev",
+    },
+    {
+        title: "CatFacts",
+        emoji: "🏆",
+        desc: "Randomised Twitter Cat Facts (Lincoln Hack Winner)",
+        href: "https://impey.dev",
+    },
+    {
+        title: "NavigateMe",
         emoji: "🗺️",
-        desc: "Helping to navigate students around the University of Lincoln campus ",
+        desc: "Navigating students around the University of Lincoln campus.",
         href: "https://navigateme.lincoln.ac.uk/",
-    }
+    },
+    {
+        title: "Chrome MC Status",
+        emoji: "⛏️",
+        desc: "Chrome extension for checking Minecraft server status",
+        href: "https://impey.dev",
+    },
 ];
 ---
 
 <PageLayout meta={{ title: "Home" }}>
     <section>
         <h1 class="title mb-6">Projects</h1>
-        <p class="mb-4">
-            An overview of past and present projects. My go-to tech stack is currently <a
-                href="https://remix.run/"
-                target="_blank"
-                rel="noopener">Remix</a
-            > with a <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> backend, which runs a Postgresql
-            database and Deno powered edge functions.
+        <p class="pb-4">
+            I work on a lot of side projects in my spare time. Most of them never see a full release, or get dropped to
+            free up time to work on new things.
+        </p>
+        <p>
+            My tech stack for personal development is based upon TypeScript and Node. React (Remix/Next/Vite/Expo) for
+            the frontend, and normally a combination of Supabase offering for the backend. I use PostgreSQL with Drizzle
+            for any database needs.
         </p>
     </section>
     <section class="mt-16">

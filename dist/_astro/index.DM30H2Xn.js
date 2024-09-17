@@ -1,12 +1,4 @@
----
-title: "A post of Markdown elements"
-description: "This post is for testing and listing a number of different markdown elements"
-publishDate: "22 Feb 2023"
-updatedDate: 22 Jan 2024
-tags: ["test", "markdown"]
-draft: true
----
-
+const n="markdown-elements/index.md",e="post",t="markdown-elements",s=`
 ## This is a H2 Heading
 
 ### This is a H3 Heading
@@ -52,13 +44,13 @@ Second example containing a reference[^2] with a link to the source.
 [^1]: Reference first footnote with a return to content link.
 [^2]: Second reference with a link.
 
-If you check out this example in `src/content/post/markdown-elements/index.md`, you'll notice that the references and the heading "Footnotes" are added to the bottom of the page via the [remark-rehype](https://github.com/remarkjs/remark-rehype#options) plugin.
+If you check out this example in \`src/content/post/markdown-elements/index.md\`, you'll notice that the references and the heading "Footnotes" are added to the bottom of the page via the [remark-rehype](https://github.com/remarkjs/remark-rehype#options) plugin.
 
 ## Lists
 
 Unordered
 
--   Create a list by starting a line with `+`, `-`, or `*`
+-   Create a list by starting a line with \`+\`, \`-\`, or \`*\`
 -   Sub-lists are made by indenting 2 spaces:
     -   Marker character change forces new list start:
         -   Ac tristique libero volutpat at
@@ -73,7 +65,7 @@ Ordered
 3. Integer molestie lorem at massa
 
 4. You can use sequential numbers...
-5. ...or keep all the numbers as `1.`
+5. ...or keep all the numbers as \`1.\`
 
 Start numbering with offset:
 
@@ -82,7 +74,7 @@ Start numbering with offset:
 
 ## Code
 
-Inline `code`
+Inline \`code\`
 
 Indented code
 
@@ -93,37 +85,37 @@ Indented code
 
 Block code "fences"
 
-```
+\`\`\`
 Sample text here...
-```
+\`\`\`
 
 Syntax highlighting
 
-```js
+\`\`\`js
 var foo = function (bar) {
     return bar++;
 };
 
 console.log(foo(5));
-```
+\`\`\`
 
 ### Expressive code examples
 
 Adding a title
 
-```js title="file.js"
+\`\`\`js title="file.js"
 console.log("Title example");
-```
+\`\`\`
 
 A bash terminal
 
-```bash
+\`\`\`bash
 echo "A base terminal example"
-```
+\`\`\`
 
 Highlighting code lines
 
-```js title="line-markers.js" del={2} ins={3-4} {6}
+\`\`\`js title="line-markers.js" del={2} ins={3-4} {6}
 function demo() {
     console.log("this line is marked as deleted");
     // This line and the next one are marked as inserted
@@ -131,7 +123,7 @@ function demo() {
 
     return "this line uses the neutral default marker type";
 }
-```
+\`\`\`
 
 [Expressive Code](https://expressive-code.com/) can do a ton more than shown here, and includes a lot of [customisation](https://expressive-code.com/reference/configuration/).
 
@@ -153,14 +145,21 @@ Right aligned columns
 
 ## Images
 
-Image in the same folder: `src/content/post/markdown-elements/logo.png`
+Image in the same folder: \`src/content/post/markdown-elements/logo.png\`
 
 ![Astro theme cactus logo](./logo.png)
 
-Image in the aliased assets folder: `src/assets/about-astro.png`
+Image in the aliased assets folder: \`src/assets/about-astro.png\`
 
 ![A cartoon cactus looking at the Astro.build logo](@/assets/about-astro.png)
 
 ## Links
 
 [Content from markdown-it](https://markdown-it.github.io/)
+`,o={title:"A post of Markdown elements",description:"This post is for testing and listing a number of different markdown elements",publishDate:new Date(1677024e6),updatedDate:new Date(17058816e5),draft:!0,tags:["test","markdown"]},i={type:"content",filePath:"/Users/ryanimpey/Documents/github/impey.dev/src/content/post/markdown-elements/index.md",rawData:`
+title: "A post of Markdown elements"
+description: "This post is for testing and listing a number of different markdown elements"
+publishDate: "22 Feb 2023"
+updatedDate: 22 Jan 2024
+tags: ["test", "markdown"]
+draft: true`};export{i as _internal,s as body,e as collection,o as data,n as id,t as slug};
