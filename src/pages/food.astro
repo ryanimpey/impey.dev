@@ -1,0 +1,12 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const URL = "https://waitforit.me/signup/bf8bab2b";
+---
+
+<PageLayout meta={{ title: "Home" }}>
+
+    <section class="w-full h-full">
+        <iframe src={URL} class="w-full h-full min-h-[768px]" />
+    </section>
+</PageLayout>
