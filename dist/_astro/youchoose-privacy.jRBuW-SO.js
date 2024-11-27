@@ -1,4 +1,4 @@
-import{c as n,r as t,m as i}from"./render-template.G-n2Z74e.js";import{u as r}from"./hoisted.De0R63w-.js";import"./astro/assets-service.3IbH0_Ak.js";const o=`<h1 id="privacy-policy">Privacy Policy</h1>
+import{c as n,r as t,m as i}from"./render-template.Bn4hk_V_.js";import{u as r}from"./hoisted.BNi6r62-.js";import"./astro/assets-service.3IbH0_Ak.js";const o=`<h1 id="privacy-policy">Privacy Policy</h1>
 <p>You Choose (“we,” “our,” or “us”) is committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and protect the personal information of users (“you”) of our application (the “App”).</p>
 <hr>
 <h2 id="information-we-collect">Information We Collect</h2>

@@ -192,6 +192,13 @@ declare module 'astro:content' {
   collection: "policy";
   data: any
 } & { render(): Render[".md"] };
+"youchoose-terms.md": {
+	id: "youchoose-terms.md";
+  slug: "youchoose-terms";
+  body: string;
+  collection: "policy";
+  data: any
+} & { render(): Render[".md"] };
 };
 "post": {
 "cover-image/index.md": {
