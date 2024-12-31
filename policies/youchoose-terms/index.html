@@ -1,0 +1,152 @@
+<!DOCTYPE html><html lang="en-GB"> <head><meta charset="utf-8"> <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"> <meta content="IE=edge" http-equiv="X-UA-Compatible"> <title>You Choose Terms of Service • Ryan Impey | Software Engineer</title>  <link href="/favicon.ico" rel="icon" sizes="any"> <link href="/icon.svg" rel="icon" type="image/svg+xml"> <link href="/apple-touch-icon.png" rel="apple-touch-icon"> <link href="/manifest.webmanifest" rel="manifest"> <link href="https://impey.dev/policies/youchoose-terms/" rel="canonical">  <meta content="You Choose Terms of Service • Ryan Impey | Software Engineer" name="title"> <meta content="Terms of Service for You Choose iOS &#38; Android" name="description"> <meta content="Ryan Impey" name="author">  <meta content="" name="theme-color">  <meta content="article" property="og:type"> <meta content="You Choose Terms of Service" property="og:title"> <meta content="Terms of Service for You Choose iOS &#38; Android" property="og:description"> <meta content="https://impey.dev/policies/youchoose-terms/" property="og:url"> <meta content="Ryan Impey | Software Engineer" property="og:site_name"> <meta content="en_GB" property="og:locale"> <meta content="https://impey.dev/og-image/youchoose-terms.png" property="og:image"> <meta content="1200" property="og:image:width"> <meta content="630" property="og:image:height">  <meta content="Ryan Impey" property="article:author"> <meta content="27 November 2024" property="article:published_time">   <meta content="summary_large_image" property="twitter:card"> <meta content="https://impey.dev/policies/youchoose-terms/" property="twitter:url"> <meta content="You Choose Terms of Service" property="twitter:title"> <meta content="Terms of Service for You Choose iOS &#38; Android" property="twitter:description"> <meta content="https://impey.dev/og-image/youchoose-terms.png" property="twitter:image">  <link href="/sitemap-index.xml" rel="sitemap">  <link href="/rss.xml" rel="alternate" title="Ryan Impey | Software Engineer" type="application/rss+xml">   <link href="https://webmention.io/astro-cactus.chriswilliams.dev/webmention" rel="webmention">  <meta content="Astro v4.2.4" name="generator"><link rel="stylesheet" href="/_astro/_slug_.75oTHzO7.css" /><script type="module" src="/_astro/hoisted.B-WKlLON.js"></script>
+<script type="module" src="/_astro/page.55INgWwS.js"></script></head> <body> <script>
+	const lightModePref = window.matchMedia("(prefers-color-scheme: light)");
+
+	function getUserPref() {
+		const storedTheme = typeof localStorage !== "undefined" && localStorage.getItem("theme");
+		return storedTheme || (lightModePref.matches ? "light" : "dark");
+	}
+
+	function setTheme(newTheme) {
+		if (newTheme !== "light" && newTheme !== "dark") {
+			return console.warn(
+				`Invalid theme value '${newTheme}' received. Expected 'light' or 'dark'.`,
+			);
+		}
+
+		const root = document.documentElement;
+
+		// root already set to newTheme, exit early
+		if (newTheme === root.getAttribute("data-theme")) {
+			return;
+		}
+
+		root.setAttribute("data-theme", newTheme);
+
+		const colorThemeMetaTag = document.querySelector("meta[name='theme-color']");
+		const bgColour = getComputedStyle(document.body).getPropertyValue("--theme-bg");
+		colorThemeMetaTag.setAttribute("content", `hsl(${bgColour})`);
+		if (typeof localStorage !== "undefined") {
+			localStorage.setItem("theme", newTheme);
+		}
+	}
+
+	// initial setup
+	setTheme(getUserPref());
+
+	// View Transitions hook to restore theme
+	document.addEventListener("astro:after-swap", () => setTheme(getUserPref()));
+
+	// listen for theme-change custom event, fired in src/components/ThemeToggle.astro
+	document.addEventListener("theme-change", (e) => {
+		setTheme(e.detail.theme);
+	});
+
+	// listen for prefers-color-scheme change.
+	lightModePref.addEventListener("change", (e) => setTheme(e.matches ? "light" : "dark"));
+</script> <a class="sr-only focus:not-sr-only focus:fixed focus:start-1 focus:top-1.5" href="#main">skip to content
+</a> <header class="group relative mb-28 flex items-center" id="main-header"> <div class="flex sm:flex-col"> <a class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block" href="/"> <span class="text-xl font-bold sm:text-2xl">Ryan Impey</span> </a> <nav aria-label="Main menu" class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-bgColor/[.85] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dashed sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none" id="navigation-menu">  </nav> </div> <site-search class="ms-auto" id="search" data-astro-cid-otpdt6jm> <button class="flex h-9 w-9 items-center justify-center rounded-md ring-zinc-400 transition-all hover:ring-2" data-open-modal disabled data-astro-cid-otpdt6jm> <svg aria-label="search" class="h-7 w-7" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg" data-astro-cid-otpdt6jm> <path d="M0 0h24v24H0z" stroke="none" data-astro-cid-otpdt6jm></path> <path d="M3 10a7 7 0 1 0 14 0 7 7 0 1 0-14 0M21 21l-6-6" data-astro-cid-otpdt6jm></path> </svg> </button> <dialog aria-label="search" class="h-full max-h-full w-full max-w-full border border-zinc-400 bg-bgColor shadow backdrop:backdrop-blur sm:mx-auto sm:mb-auto sm:mt-16 sm:h-max sm:max-h-[calc(100%-8rem)] sm:min-h-[15rem] sm:w-5/6 sm:max-w-[48rem] sm:rounded-md" data-astro-cid-otpdt6jm> <div class="dialog-frame flex flex-col gap-4 p-6 pt-12 sm:pt-6" data-astro-cid-otpdt6jm> <button class="ms-auto cursor-pointer rounded-md bg-zinc-200 p-2 font-semibold dark:bg-zinc-700" data-close-modal data-astro-cid-otpdt6jm>Close</button> <div class="search-container" data-astro-cid-otpdt6jm> <div id="cactus__search" data-astro-cid-otpdt6jm></div> </div> </div> </dialog> </site-search>    <theme-toggle class="ms-2 sm:ms-4"> <button class="relative h-9 w-9 rounded-md p-2 ring-zinc-400 transition-all hover:ring-2" type="button"> <span class="sr-only">Dark Theme</span> <svg aria-hidden="true" class="absolute start-1/2 top-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-100 opacity-100 transition-all dark:scale-0 dark:opacity-0" fill="none" focusable="false" id="sun-svg" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M22 12L23 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 2V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 23V22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 20L19 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 4L19 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M4 20L5 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M4 4L5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M1 12L2 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path> </svg> <svg aria-hidden="true" class="absolute start-1/2 top-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all dark:scale-100 dark:opacity-100" fill="none" focusable="false" id="moon-svg" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M0 0h24v24H0z" fill="none" stroke="none"></path> <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path> <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"></path> <path d="M19 11h2m-1 -1v2"></path> </svg> </button> </theme-toggle>  <mobile-button> <button aria-expanded="false" aria-haspopup="menu" aria-label="Open main menu" class="group relative ms-4 h-7 w-7 sm:invisible sm:hidden" id="toggle-navigation-menu" type="button"> <svg aria-hidden="true" class="absolute start-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 transition-all group-aria-expanded:scale-0 group-aria-expanded:opacity-0" fill="none" focusable="false" id="line-svg" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M3.75 9h16.5m-16.5 6.75h16.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg> <svg aria-hidden="true" class="absolute start-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 scale-0 text-accent opacity-0 transition-all group-aria-expanded:scale-100 group-aria-expanded:opacity-100" class="text-accent" fill="none" focusable="false" id="cross-svg" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </button> </mobile-button> </header>  <main id="main">  <div class="gap-x-10 lg:flex lg:items-start"> <aside class="sticky top-20 order-2 -me-32 hidden basis-64 lg:block"> <h2 class="font-semibold">Table of Contents</h2> <ul class="mt-4 text-xs"> <li class=""> <a aria-label="Scroll to section: Acceptance of Terms" class="block line-clamp-2 hover:text-accent mt-3" href="#acceptance-of-terms"><span class="me-0.5">#</span>Acceptance of Terms</a>  </li><li class=""> <a aria-label="Scroll to section: Account Creation and Responsibilities" class="block line-clamp-2 hover:text-accent mt-3" href="#account-creation-and-responsibilities"><span class="me-0.5">#</span>Account Creation and Responsibilities</a>  </li><li class=""> <a aria-label="Scroll to section: 3. Purchases and Subscriptions" class="block line-clamp-2 hover:text-accent mt-3" href="#3-purchases-and-subscriptions"><span class="me-0.5">#</span>3. Purchases and Subscriptions</a>  </li><li class=""> <a aria-label="Scroll to section: 4. Intellectual Property" class="block line-clamp-2 hover:text-accent mt-3" href="#4-intellectual-property"><span class="me-0.5">#</span>4. Intellectual Property</a>  </li><li class=""> <a aria-label="Scroll to section: 5. Disclaimers and Limitations of Liability" class="block line-clamp-2 hover:text-accent mt-3" href="#5-disclaimers-and-limitations-of-liability"><span class="me-0.5">#</span>5. Disclaimers and Limitations of Liability</a>  </li><li class=""> <a aria-label="Scroll to section: 6. Changes to the Terms" class="block line-clamp-2 hover:text-accent mt-3" href="#6-changes-to-the-terms"><span class="me-0.5">#</span>6. Changes to the Terms</a>  </li><li class=""> <a aria-label="Scroll to section: 7. Governing Law" class="block line-clamp-2 hover:text-accent mt-3" href="#7-governing-law"><span class="me-0.5">#</span>7. Governing Law</a>  </li><li class=""> <a aria-label="Scroll to section: 8. Contact Us" class="block line-clamp-2 hover:text-accent mt-3" href="#8-contact-us"><span class="me-0.5">#</span>8. Contact Us</a>  </li> </ul> </aside> <article class="flex-grow break-words" data-pagefind-body> <div id="blog-hero"><h1 class="title mb-3 sm:mb-1"> You Choose Terms of Service </h1> <div class="flex flex-wrap items-center gap-x-3 gap-y-2"> <p class="font-semibold"> <p aria-label="Publish date"> 27 November 2024 </p> /  3 min read </p>  </div> <div class="mt-3"> <svg aria-hidden="true" class="me-1 inline-block h-6 w-6" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M0 0h24v24H0z" fill="none" stroke="none"></path> <path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z"></path> <path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path> <path d="M6 9h-.01"></path> </svg>  <a aria-label="View more blogs with the tag youchoose" class="cactus-link inline-block before:content-['#']" data-pagefind-filter="tag" href="/tags/youchoose/">youchoose</a> </div></div> <div class="prose prose-sm prose-cactus mt-12 prose-headings:font-semibold prose-headings:text-accent-2 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none">  <h1 id="terms-of-service">Terms of Service</h1>
+<p>These Terms of Service (“Terms”) govern your use of our application (the “App”). By accessing or using the App, you agree to be bound by these Terms. If you do not agree, you may not use the App.</p>
+<hr>
+<h2 id="acceptance-of-terms">Acceptance of Terms</h2>
+<p>By creating an account, accessing, or using the App, you confirm that you are at least 18 years old (or have parental/guardian consent) and capable of entering into a legally binding agreement. If you are using the App on behalf of an organization, you represent that you have the authority to bind that organization to these Terms.</p>
+<hr>
+<h2 id="account-creation-and-responsibilities">Account Creation and Responsibilities</h2>
+<ol>
+<li>
+<p><strong>Account Information</strong></p>
+<ul>
+<li>To use certain features of the App, you may need to create an account by providing accurate and complete information. You are responsible for maintaining the confidentiality of your account credentials.</li>
+</ul>
+</li>
+<li>
+<p><strong>Prohibited Activities</strong></p>
+<ul>
+<li>You agree not to:
+<ul>
+<li>Use the App for any unlawful purpose.</li>
+<li>Attempt to access unauthorized features or interfere with the operation of the App.</li>
+<li>Reverse engineer, modify, or distribute any part of the App without permission.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Account Termination</strong></p>
+<ul>
+<li>We reserve the right to suspend or terminate your account if we suspect a violation of these Terms or any illegal or unauthorized activity.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="3-purchases-and-subscriptions">3. Purchases and Subscriptions</h2>
+<ol>
+<li>
+<p><strong>Billing and Payment</strong></p>
+<ul>
+<li>The App may offer in-app purchases or subscription services. Payments are processed through third-party platforms, such as RevenueCat, and are subject to their terms.</li>
+</ul>
+</li>
+<li>
+<p><strong>Refunds</strong></p>
+<ul>
+<li>All purchases and subscriptions are final and non-refundable unless required by law. For assistance, contact <a href="mailto:youchoose@impey.dev">youchoose@impey.dev</a>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Subscription Management</strong></p>
+<ul>
+<li>You are responsible for managing your subscriptions, including cancellations. Subscriptions may automatically renew unless canceled before the renewal date.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="4-intellectual-property">4. Intellectual Property</h2>
+<ol>
+<li>
+<p><strong>Ownership</strong></p>
+<ul>
+<li>The App, including its content, features, and functionality, is owned by ‘You Choose’ and protected by copyright, trademark, and other intellectual property laws.</li>
+</ul>
+</li>
+<li>
+<p><strong>Limited License</strong></p>
+<ul>
+<li>We grant you a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial purposes. You may not copy, modify, or distribute any part of the App without our prior written consent.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="5-disclaimers-and-limitations-of-liability">5. Disclaimers and Limitations of Liability</h2>
+<ol>
+<li>
+<p><strong>Disclaimers</strong></p>
+<ul>
+<li>The App is provided “as is” and “as available” without warranties of any kind, express or implied. We do not guarantee that the App will be error-free, secure, or operate without interruption.</li>
+</ul>
+</li>
+<li>
+<p><strong>Limitations of Liability</strong></p>
+<ul>
+<li>To the fullest extent permitted by law, we are not liable for any indirect, incidental, special, or consequential damages arising from your use of the App.</li>
+</ul>
+</li>
+<li>
+<p><strong>Indemnification</strong></p>
+<ul>
+<li>You agree to indemnify and hold us harmless from any claims, losses, or damages arising from your use of the App or violation of these Terms.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="6-changes-to-the-terms">6. Changes to the Terms</h2>
+<p>We may update these Terms from time to time. The updated Terms will be posted within the App or on our website, and your continued use of the App after such updates constitutes acceptance of the changes.</p>
+<hr>
+<h2 id="7-governing-law">7. Governing Law</h2>
+<p>These Terms are governed by the laws of the United Kingdom, without regard to its conflict of law principles. Any disputes arising from these Terms or the App will be resolved in the courts of the United Kingdom.</p>
+<hr>
+<h2 id="8-contact-us">8. Contact Us</h2>
+<p>If you have questions about these Terms, please contact us at:<br>
+<strong>Email:</strong> <a href="mailto:youchoose@impey.dev">youchoose@impey.dev</a></p>
+<hr>   </div> </article> </div> <button aria-label="Back to Top" class="z-90 fixed bottom-8 end-4 flex h-10 w-10 translate-y-28 items-center justify-center rounded-full border-2 border-transparent bg-zinc-200 text-3xl opacity-0 transition-all duration-300 hover:border-zinc-400 data-[show=true]:translate-y-0 data-[show=true]:opacity-100 dark:bg-zinc-700 sm:end-8 sm:h-12 sm:w-12" data-show="false" id="to-top-btn"><svg aria-hidden="true" class="h-6 w-6" fill="none" focusable="false" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M4.5 15.75l7.5-7.5 7.5 7.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </button>  </main> <footer class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pb-4 pt-20 text-center align-top font-semibold text-gray-600 dark:text-gray-400 sm:flex-row sm:justify-between sm:text-xs"> <div class="me-0 sm:me-4">
+&copy; Ryan Impey 2024.<span class="inline-block">&nbsp;🚀&nbsp;<a href="https://github.com/chrismwilliams/astro-theme-cactus" target="_blank" rel="noopener">Built with the wonderful Astro Cactus</a></span> </div> <nav aria-label="More on this site" class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500">  </nav> </footer> </body></html> 

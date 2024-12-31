@@ -1,4 +1,4 @@
-import{c as o,r as n,m as i}from"./render-template.DNaz_h5O.js";import{u as a}from"./hoisted.CztoV7NY.js";import"./astro/assets-service.3IbH0_Ak.js";const t=`<h2 id="tldr">tldr</h2>
+import{c as o,r as n,m as i}from"./render-template.DRIpY2Ke.js";import{u as a}from"./hoisted.Bp0PSbdC.js";import"./astro/assets-service.3IbH0_Ak.js";const t=`<h2 id="tldr">tldr</h2>
 <ol>
 <li>Ensure your social media links are added in <code>src/components/SocialList.astro</code>, most importantly the email address</li>
 <li>Create an account @ <a href="https://webmention.io/" rel="nofollow, noopener, noreferrer" target="_blank">Webmention.io</a>.</li>
