@@ -185,6 +185,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"policy": {
+"onepercent-privacy.md": {
+	id: "onepercent-privacy.md";
+  slug: "onepercent-privacy";
+  body: string;
+  collection: "policy";
+  data: any
+} & { render(): Render[".md"] };
 "youchoose-privacy.md": {
 	id: "youchoose-privacy.md";
   slug: "youchoose-privacy";
