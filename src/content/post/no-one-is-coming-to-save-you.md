@@ -3,6 +3,7 @@ title: "No one is coming to save you."
 publishDate: "20 January 2025"
 description: "Maybe the beginning of my online ramblings, read at the expense of your time."
 tags: ["cringe"]
+draft: true
 ogImage: "/social-card.png"
 ---
 

@@ -1,4 +1,4 @@
-import{c as t,r as o,m as i}from"./render-template.ChZqGrWu.js";import{u as r}from"./hoisted.BGCsXJid.js";import"./astro/assets-service.3IbH0_Ak.js";const n=`<h1 id="terms-of-service">Terms of Service</h1>
+import{c as t,r as o,m as i}from"./render-template.Dqv0hIb6.js";import{u as r}from"./hoisted.BFWYe-Q9.js";import"./astro/assets-service.3IbH0_Ak.js";const n=`<h1 id="terms-of-service">Terms of Service</h1>
 <p>These Terms of Service (“Terms”) govern your use of our application (the “App”). By accessing or using the App, you agree to be bound by these Terms. If you do not agree, you may not use the App.</p>
 <hr>
 <h2 id="acceptance-of-terms">Acceptance of Terms</h2>

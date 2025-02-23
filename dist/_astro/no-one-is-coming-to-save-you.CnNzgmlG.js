@@ -32,9 +32,10 @@ I've become comfortably uncomfortable. Uncomfortable enough to try building some
 Nothing more to say for now. Hopefully this kicks me into focusing on what I need to do, and seeing it through to release.
 
 ### Thanks!
-`,i={title:"No one is coming to save you.",description:"Maybe the beginning of my online ramblings, read at the expense of your time.",publishDate:new Date(17373312e5),draft:!1,tags:["cringe"],ogImage:"/social-card.png"},a={type:"content",filePath:"/Users/ryanimpey/Documents/github/impey.dev/src/content/post/no-one-is-coming-to-save-you.md",rawData:`
+`,i={title:"No one is coming to save you.",description:"Maybe the beginning of my online ramblings, read at the expense of your time.",publishDate:new Date(17373312e5),draft:!0,tags:["cringe"],ogImage:"/social-card.png"},a={type:"content",filePath:"/Users/ryanimpey/Documents/github/impey.dev/src/content/post/no-one-is-coming-to-save-you.md",rawData:`
 title: "No one is coming to save you."
 publishDate: "20 January 2025"
 description: "Maybe the beginning of my online ramblings, read at the expense of your time."
 tags: ["cringe"]
+draft: true
 ogImage: "/social-card.png"`};export{a as _internal,o as body,n as collection,i as data,e as id,t as slug};

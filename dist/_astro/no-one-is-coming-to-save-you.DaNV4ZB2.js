@@ -1,4 +1,4 @@
-import{c as t,r as s,m as a}from"./render-template.ChZqGrWu.js";import{u as o}from"./hoisted.BGCsXJid.js";import"./astro/assets-service.3IbH0_Ak.js";const n=`<h2 id="no-one-is-coming-to-save-you">No one is coming to save you.</h2>
+import{c as t,r as s,m as a}from"./render-template.Dqv0hIb6.js";import{u as o}from"./hoisted.BFWYe-Q9.js";import"./astro/assets-service.3IbH0_Ak.js";const n=`<h2 id="no-one-is-coming-to-save-you">No one is coming to save you.</h2>
 <p>I’m rubbish at sharing stuff online. If it’s not perfect, I don’t want to share it. Maybe I’m a perfectionist, maybe I’m still the teenager who didn’t enjoy my mates finding my 5 year old minecraft tutorials back in 2016. Fun times.</p>
 <p>Anyway.</p>
 <p>I have this little blue Moleskine notebook that I take with me anywhere my laptop goes, it’s my nice junk and thinking booklet. I’ve recently stopped using it in favour of another more organised black Moleskine to document my daily progress, really exciting stuff I know, but the first page of it reads as follows:</p>
@@ -11,7 +11,7 @@ import{c as t,r as s,m as a}from"./render-template.ChZqGrWu.js";import{u as o}fr
 <p>Throughout 2023 and 2024 I spent countless evenings and weekends building things, making prototypes, getting products <em>ready</em> to release, then bailing when I saw competition, doubting how a newcomer could enter an existing market, concerned that my product would be considered shit, even though I was using it to help me build things on a daily basis.</p>
 <p>I’ve become comfortably uncomfortable. Uncomfortable enough to try building something each night and weekend, but comfortable enough to not see it through, in case it’s considered <em>cringe</em> I guess, hence the reason for this big yap.</p>
 <p>Nothing more to say for now. Hopefully this kicks me into focusing on what I need to do, and seeing it through to release.</p>
-<h3 id="thanks">Thanks!</h3>`,i={title:"No one is coming to save you.",publishDate:"20 January 2025",description:"Maybe the beginning of my online ramblings, read at the expense of your time.",tags:["cringe"],ogImage:"/social-card.png",minutesRead:"2 min read"},r="/Users/ryanimpey/Documents/github/impey.dev/src/content/post/no-one-is-coming-to-save-you.md",l=void 0;function u(){return`
+<h3 id="thanks">Thanks!</h3>`,i={title:"No one is coming to save you.",publishDate:"20 January 2025",description:"Maybe the beginning of my online ramblings, read at the expense of your time.",tags:["cringe"],draft:!0,ogImage:"/social-card.png",minutesRead:"2 min read"},r="/Users/ryanimpey/Documents/github/impey.dev/src/content/post/no-one-is-coming-to-save-you.md",l=void 0;function u(){return`
 ## No one is coming to save you.
 
 I'm rubbish at sharing stuff online. If it's not perfect, I don't want to share it. Maybe I'm a perfectionist, maybe I'm still the teenager who didn't enjoy my mates finding my 5 year old minecraft tutorials back in 2016. Fun times.
