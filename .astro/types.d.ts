@@ -236,20 +236,6 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"no-one-is-coming-to-save-you.md": {
-	id: "no-one-is-coming-to-save-you.md";
-  slug: "no-one-is-coming-to-save-you";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".md"] };
-"tuesday-21-jan.md": {
-	id: "tuesday-21-jan.md";
-  slug: "tuesday-21-jan";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".md"] };
 "webmentions/index.md": {
 	id: "webmentions/index.md";
   slug: "webmentions";
