@@ -199,6 +199,20 @@ declare module 'astro:content' {
   collection: "policy";
   data: any
 } & { render(): Render[".md"] };
+"stepscape-privacy.md": {
+	id: "stepscape-privacy.md";
+  slug: "stepscape-privacy";
+  body: string;
+  collection: "policy";
+  data: any
+} & { render(): Render[".md"] };
+"stepscape-terms.md": {
+	id: "stepscape-terms.md";
+  slug: "stepscape-terms";
+  body: string;
+  collection: "policy";
+  data: any
+} & { render(): Render[".md"] };
 "youchoose-privacy.md": {
 	id: "youchoose-privacy.md";
   slug: "youchoose-privacy";

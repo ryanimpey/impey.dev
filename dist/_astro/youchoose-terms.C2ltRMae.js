@@ -1,4 +1,4 @@
-import{c as t,r as o,m as i}from"./render-template.BhXifGpr.js";import{u as r}from"./hoisted.CH3cQFQR.js";import"./astro/assets-service.3IbH0_Ak.js";const n=`<h1 id="terms-of-service">Terms of Service</h1>
+import{c as t,r as o,m as i}from"./render-template.BUZCf0XU.js";import{u as r}from"./hoisted.CV6U7oP1.js";import"./astro/assets-service.3IbH0_Ak.js";const n=`<h1 id="terms-of-service">Terms of Service</h1>
 <p>These Terms of Service (“Terms”) govern your use of our application (the “App”). By accessing or using the App, you agree to be bound by these Terms. If you do not agree, you may not use the App.</p>
 <hr>
 <h2 id="acceptance-of-terms">Acceptance of Terms</h2>
@@ -43,7 +43,7 @@ import{c as t,r as o,m as i}from"./render-template.BhXifGpr.js";import{u as r}fr
 <li>
 <p><strong>Refunds</strong></p>
 <ul>
-<li>All purchases and subscriptions are final and non-refundable unless required by law. For assistance, contact <a href="mailto:onepercent@impey.dev">onepercent@impey.dev</a>.</li>
+<li>All purchases and subscriptions are final and non-refundable unless required by law. For assistance, contact <a href="mailto:youchoose@impey.dev">youchoose@impey.dev</a>.</li>
 </ul>
 </li>
 <li>
@@ -59,7 +59,7 @@ import{c as t,r as o,m as i}from"./render-template.BhXifGpr.js";import{u as r}fr
 <li>
 <p><strong>Ownership</strong></p>
 <ul>
-<li>The App, including its content, features, and functionality, is owned by ”One Percent” and protected by copyright, trademark, and other intellectual property laws.</li>
+<li>The App, including its content, features, and functionality, is owned by ‘You Choose’ and protected by copyright, trademark, and other intellectual property laws.</li>
 </ul>
 </li>
 <li>
@@ -101,7 +101,7 @@ import{c as t,r as o,m as i}from"./render-template.BhXifGpr.js";import{u as r}fr
 <h2 id="8-contact-us">8. Contact Us</h2>
 <p>If you have questions about these Terms, please contact us at:<br>
 <strong>Email:</strong> <a href="mailto:youchoose@impey.dev">youchoose@impey.dev</a></p>
-<hr>`,a={title:"'One Percent' Terms of Service",description:"Terms of Service for 'One Percent' iOS & Android",publishDate:"27 November 2024",tags:["onepercent"],draft:!1,minutesRead:"3 min read"},s="/Users/ryanimpey/Documents/github/impey.dev/src/content/policy/onepercent-terms.md",l=void 0;function y(){return`
+<hr>`,a={title:"You Choose Terms of Service",description:"Terms of Service for You Choose iOS & Android",publishDate:"27 November 2024",tags:["youchoose"],draft:!1,minutesRead:"3 min read"},s="/Users/ryanimpey/Documents/github/impey.dev/src/content/policy/youchoose-terms.md",l=void 0;function y(){return`
 # Terms of Service
 
 These Terms of Service ("Terms") govern your use of our application (the "App"). By accessing or using the App, you agree to be bound by these Terms. If you do not agree, you may not use the App.
@@ -140,7 +140,7 @@ By creating an account, accessing, or using the App, you confirm that you are at
 
 2. **Refunds**
 
-    - All purchases and subscriptions are final and non-refundable unless required by law. For assistance, contact onepercent@impey.dev.
+    - All purchases and subscriptions are final and non-refundable unless required by law. For assistance, contact youchoose@impey.dev.
 
 3. **Subscription Management**
     - You are responsible for managing your subscriptions, including cancellations. Subscriptions may automatically renew unless canceled before the renewal date.
@@ -151,7 +151,7 @@ By creating an account, accessing, or using the App, you confirm that you are at
 
 1. **Ownership**
 
-    - The App, including its content, features, and functionality, is owned by ''One Percent'' and protected by copyright, trademark, and other intellectual property laws.
+    - The App, including its content, features, and functionality, is owned by 'You Choose' and protected by copyright, trademark, and other intellectual property laws.
 
 2. **Limited License**
     - We grant you a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial purposes. You may not copy, modify, or distribute any part of the App without our prior written consent.
