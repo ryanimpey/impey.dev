@@ -80,5 +80,30 @@ import PageLayout from "@/layouts/Base.astro";
                 </p>
             </div>
         </section>
-    </div></PageLayout
->
+    </div>
+    <div class="max-w-7xl grid mx-auto grid-cols-1 gap-2 mt-8">
+        <section class="col-span-1 mt-8">
+            <section class="max-w-3xl">
+                <h1 class="text-lg font-bold mb-6 leading-tight text-garden-light dark:text-green-400">
+                    Requesting Account Deletion
+                </h1>
+                <p class="leading-relaxed text-gray-700 dark:text-gray-200 mb-8">
+                    If you'd like to delete your account, you can do so by clicking the <span class="text-red-600"
+                        >&nbsp;Delete Account&nbsp;</span
+                    > button in the app settings. The following account information may exist after account deletion, in
+                    an inaccessible, unidentifiable state.
+                    <ul class="list-disc">
+                        <li>Where your steps were sourced from.</li>
+                        <li>A count of the steps you took each day.</li>
+                        <li>The last seen state your plants were in.</li>
+                        <li>Miscellaneous account information, such as push notification registration.</li>
+                    </ul>
+                </p>
+                <p class="leading-relaxed text-gray-700 dark:text-gray-200 mb-8 mt-8">
+                    Email us at stepscape@impey.dev and we will respond to your request as soon as possible, thank you
+                    for using Stepscape!
+                </p>
+            </section>
+        </section>
+    </div>
+</PageLayout>
