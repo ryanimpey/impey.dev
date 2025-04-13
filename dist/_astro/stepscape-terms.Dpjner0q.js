@@ -1,4 +1,4 @@
-import{c as t,r as o,m as i}from"./render-template.BUZCf0XU.js";import{u as r}from"./hoisted.CV6U7oP1.js";import"./astro/assets-service.3IbH0_Ak.js";const n=`<h1 id="terms-of-service">Terms of Service</h1>
+import{c as t,r as i,m as o}from"./render-template.Ba9JY6Ga.js";import{u as r}from"./hoisted.CwT1qPG9.js";import"./astro/assets-service.3IbH0_Ak.js";const n=`<h1 id="terms-of-service">Terms of Service</h1>
 <p>These Terms of Service (“Terms”) govern your use of our application (the “App”). By accessing or using the App, you agree to be bound by these Terms. If you do not agree, you may not use the App.</p>
 <hr>
 <h2 id="acceptance-of-terms">Acceptance of Terms</h2>
@@ -43,7 +43,7 @@ import{c as t,r as o,m as i}from"./render-template.BUZCf0XU.js";import{u as r}fr
 <li>
 <p><strong>Refunds</strong></p>
 <ul>
-<li>All purchases and subscriptions are final and non-refundable unless required by law. For assistance, contact <a href="mailto:onepercent@impey.dev">onepercent@impey.dev</a>.</li>
+<li>All purchases and subscriptions are final and non-refundable unless required by law. For assistance, contact <a href="mailto:stepscape@impey.dev">stepscape@impey.dev</a>.</li>
 </ul>
 </li>
 <li>
@@ -59,7 +59,7 @@ import{c as t,r as o,m as i}from"./render-template.BUZCf0XU.js";import{u as r}fr
 <li>
 <p><strong>Ownership</strong></p>
 <ul>
-<li>The App, including its content, features, and functionality, is owned by ”One Percent” and protected by copyright, trademark, and other intellectual property laws.</li>
+<li>The App, including its content, features, and functionality, is owned by ‘Step Scape’ and protected by copyright, trademark, and other intellectual property laws.</li>
 </ul>
 </li>
 <li>
@@ -101,7 +101,7 @@ import{c as t,r as o,m as i}from"./render-template.BUZCf0XU.js";import{u as r}fr
 <h2 id="8-contact-us">8. Contact Us</h2>
 <p>If you have questions about these Terms, please contact us at:<br>
 <strong>Email:</strong> <a href="mailto:youchoose@impey.dev">youchoose@impey.dev</a></p>
-<hr>`,a={title:"'One Percent' Terms of Service",description:"Terms of Service for 'One Percent' iOS & Android",publishDate:"27 November 2024",tags:["onepercent"],draft:!1,minutesRead:"3 min read"},s="/Users/ryanimpey/Documents/github/impey.dev/src/content/policy/onepercent-terms.md",l=void 0;function y(){return`
+<hr>`,a={title:"'Step Scape' Terms of Service",description:"Terms of Service for 'Step Scape' iOS & Android",publishDate:"25 March 2025",tags:["stepscape"],draft:!1,minutesRead:"3 min read"},s="/Users/ryanimpey/Documents/github/impey.dev/src/content/policy/stepscape-terms.md",l=void 0;function y(){return`
 # Terms of Service
 
 These Terms of Service ("Terms") govern your use of our application (the "App"). By accessing or using the App, you agree to be bound by these Terms. If you do not agree, you may not use the App.
@@ -140,7 +140,7 @@ By creating an account, accessing, or using the App, you confirm that you are at
 
 2. **Refunds**
 
-    - All purchases and subscriptions are final and non-refundable unless required by law. For assistance, contact onepercent@impey.dev.
+    - All purchases and subscriptions are final and non-refundable unless required by law. For assistance, contact stepscape@impey.dev.
 
 3. **Subscription Management**
     - You are responsible for managing your subscriptions, including cancellations. Subscriptions may automatically renew unless canceled before the renewal date.
@@ -151,7 +151,7 @@ By creating an account, accessing, or using the App, you confirm that you are at
 
 1. **Ownership**
 
-    - The App, including its content, features, and functionality, is owned by ''One Percent'' and protected by copyright, trademark, and other intellectual property laws.
+    - The App, including its content, features, and functionality, is owned by 'Step Scape' and protected by copyright, trademark, and other intellectual property laws.
 
 2. **Limited License**
     - We grant you a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial purposes. You may not copy, modify, or distribute any part of the App without our prior written consent.
@@ -191,4 +191,4 @@ If you have questions about these Terms, please contact us at:
 **Email:** youchoose@impey.dev
 
 ---
-`}function g(){return n}function b(){return[{depth:1,slug:"terms-of-service",text:"Terms of Service"},{depth:2,slug:"acceptance-of-terms",text:"Acceptance of Terms"},{depth:2,slug:"account-creation-and-responsibilities",text:"Account Creation and Responsibilities"},{depth:2,slug:"3-purchases-and-subscriptions",text:"3. Purchases and Subscriptions"},{depth:2,slug:"4-intellectual-property",text:"4. Intellectual Property"},{depth:2,slug:"5-disclaimers-and-limitations-of-liability",text:"5. Disclaimers and Limitations of Liability"},{depth:2,slug:"6-changes-to-the-terms",text:"6. Changes to the Terms"},{depth:2,slug:"7-governing-law",text:"7. Governing Law"},{depth:2,slug:"8-contact-us",text:"8. Contact Us"}]}const A=t((u,p,c)=>{const{layout:h,...e}=a;return e.file=s,e.url=l,o`${i()}${r(n)}`});export{A as Content,g as compiledContent,A as default,s as file,a as frontmatter,b as getHeadings,y as rawContent,l as url};
+`}function g(){return n}function b(){return[{depth:1,slug:"terms-of-service",text:"Terms of Service"},{depth:2,slug:"acceptance-of-terms",text:"Acceptance of Terms"},{depth:2,slug:"account-creation-and-responsibilities",text:"Account Creation and Responsibilities"},{depth:2,slug:"3-purchases-and-subscriptions",text:"3. Purchases and Subscriptions"},{depth:2,slug:"4-intellectual-property",text:"4. Intellectual Property"},{depth:2,slug:"5-disclaimers-and-limitations-of-liability",text:"5. Disclaimers and Limitations of Liability"},{depth:2,slug:"6-changes-to-the-terms",text:"6. Changes to the Terms"},{depth:2,slug:"7-governing-law",text:"7. Governing Law"},{depth:2,slug:"8-contact-us",text:"8. Contact Us"}]}const A=t((p,u,c)=>{const{layout:h,...e}=a;return e.file=s,e.url=l,i`${o()}${r(n)}`});export{A as Content,g as compiledContent,A as default,s as file,a as frontmatter,b as getHeadings,y as rawContent,l as url};

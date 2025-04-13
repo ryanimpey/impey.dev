@@ -16,6 +16,14 @@ We collect the following types of information:
 2. **Purchase Information**
     - When you make purchases through the App, we collect transaction details (e.g., purchase identifiers) to manage your subscription or purchase.
 
+Location Data: We collect data about your geographic location. This data is collected to deliver location-based advertisements and to improve our services.
+
+Identity Data: This may include unique identifiers, such as your device ID, that help us personalize and secure your experience.
+
+Usage Data: We collect information on how you interact with the App, including features you use, the time you spend, and actions you take within the App.
+
+Diagnostics Data: To ensure app stability and improve performance, we collect diagnostic data on app crashes, errors, and device-specific performance.
+
 ---
 
 ## How We Use Your Information
@@ -24,26 +32,51 @@ We use the collected information for the following purposes:
 
 1. **Authentication**
 
-    - Account information is used to verify your identity and enable access to your account.
+-   Account information is used to verify your identity and enable access to your account.
 
 2. **Purchase Processing**
-    - Purchase information is shared with **RevenueCat**, a third-party service provider, to facilitate subscription and purchase management.
+
+-   Purchase information is shared with **RevenueCat** and **Superwall**, third-party service providers, to facilitate subscription and purchase management.
+
+3. **Personalized Advertising**
+
+-   We use your data to provide personalized advertisements that are relevant to your interests. Google AdMob, our third-party provider, uses this information to serve tailored ads within the App.
+
+4. **Improving App Performance**
+
+-   Improving App Performance: Usage and diagnostic data help us to understand how users interact with the App and allows us to improve our features, content, and user experience.
+
+5. **Sharing Your Information with Third Parties**
+
+-   To serve personalized advertisements, we share certain data with Google AdMob, including:
+    -   Location Data
+    -   Identity Data
+    -   Usage Data
+    -   Diagnostics Data
 
 ---
 
 ## Sharing Your Information
 
-We do not sell, rent, or trade your personal information. However, we may share your information in the following scenarios:
+We may share your information in the following scenarios:
 
 1. **With RevenueCat**
 
     - We share purchase-related information with RevenueCat to process subscriptions, manage billing, and handle purchase validations. You can learn more about their privacy practices by visiting [RevenueCat's Privacy Policy](https://www.revenuecat.com/privacy).
 
-2. **Consent to Share Consumption Data with Apple**
+2. **With Superwall**
+
+    - We share purchase-related information with Superwall to process subscriptions, manage billing, and handle purchase validations. You can learn more about their privacy practices by visiting [Superwall's Privacy Policy](https://superwall.com/privacy).
+
+3. **With Google AdMob**
+
+    - Google AdMob may use this information in accordance with its own privacy policy, which we recommend reviewing for more details on their practices. For more information, please visit [Google Privacy Policy](https://policies.google.com/privacy).
+
+4. **Consent to Share Consumption Data with Apple**
 
     - By using our app and making in-app purchases, you consent to our sharing of data regarding your usage and consumption of purchased content with Apple, as part of our efforts to resolve refund requests. This information may include details about how you have accessed and interacted with the purchased content. The purpose of sharing this data is to help Apple make an informed decision regarding refund requests. We ensure that such data sharing is done in compliance with Apple's policies and only as necessary to process your requests.
 
-3. **As Required by Law**
+5. **As Required by Law**
     - We may disclose your information if required to comply with legal obligations or to protect our legal rights.
 
 ---
@@ -69,6 +102,22 @@ To exercise these rights, please contact us at stepscape@impey.dev.
 ## Third-Party Services
 
 This Privacy Policy applies solely to our App. Our App may contain links to third-party services, which are governed by their respective privacy policies. We encourage you to review their terms before interacting with their services.
+
+---
+
+5. Your Choices and Rights
+   You have certain rights regarding the personal information we hold about you. Depending on your location, these rights may include:
+
+Access: You may have the right to access the personal data we hold about you.
+
+Correction: You may request that we correct any inaccurate or incomplete information.
+
+Deletion: You may request the deletion of your personal information, subject to certain legal requirements.
+
+If you would like to exercise any of these rights, please contact us at [Contact Email].
+
+6. Children’s Privacy
+   Our App is not intended for use by children under the age of 13, and we do not knowingly collect information from children under this age. If we become aware that we have inadvertently collected personal data from a child under 13, we will take steps to delete such information promptly.
 
 ---
 
