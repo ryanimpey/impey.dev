@@ -185,6 +185,20 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"policy": {
+"focusfish-privacy.md": {
+	id: "focusfish-privacy.md";
+  slug: "focusfish-privacy";
+  body: string;
+  collection: "policy";
+  data: any
+} & { render(): Render[".md"] };
+"focusfish-terms.md": {
+	id: "focusfish-terms.md";
+  slug: "focusfish-terms";
+  body: string;
+  collection: "policy";
+  data: any
+} & { render(): Render[".md"] };
 "onepercent-privacy.md": {
 	id: "onepercent-privacy.md";
   slug: "onepercent-privacy";
