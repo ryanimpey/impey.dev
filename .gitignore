@@ -51,6 +51,7 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+nextjs/
 # dotenv environment variables file
 .env
 
