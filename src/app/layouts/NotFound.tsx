@@ -10,7 +10,6 @@ export const NotFound: React.FC<{ children?: React.ReactNode }> = ({ children })
             <title>@redwoodjs/starter-standard</title>
             <link rel="modulepreload" href="/src/client.tsx" />
             <link rel="stylesheet" href={styles} />
-            <link rel="stylesheet" href="devicon.min.css" />
         </head>
         <body className={`antialiased h-screen bg-background px-4 lg:px-0`}>
             <Header />

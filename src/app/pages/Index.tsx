@@ -2,6 +2,17 @@ import { RequestInfo } from "rwsdk/worker";
 import { IconBrandGithub, IconBrandLinkedin, IconMail } from "@tabler/icons-react";
 import Head from "@/app/components/Head";
 
+import IconCPlain from "devicons-react/icons/CPlain";
+import IconCEmbedded from "devicons-react/icons/EmbeddedcPlain";
+import IconSplunk from "devicons-react/icons/SplunkOriginalWordmark";
+import IconPython from "devicons-react/icons/PythonPlain";
+import IconTS from "devicons-react/icons/TypescriptPlain";
+import IconReact from "devicons-react/icons/ReactOriginal";
+import IconJS from "devicons-react/icons/JavascriptPlain";
+import IconBash from "devicons-react/icons/BashPlain";
+import IconPostgres from "devicons-react/icons/PostgresqlPlain";
+import IconRailway from "devicons-react/icons/RailwayOriginal";
+
 export function Index({ ctx }: RequestInfo) {
     return (
         <>
@@ -49,8 +60,8 @@ export function Index({ ctx }: RequestInfo) {
                         </p>
                     </div>
                     <div className="flex flex-row items-center gap-x-2 py-4">
-                        {techIcons.map(({ desc, icon }) => (
-                            <i key={icon} className={`${icon} text-2xl`} aria-label={desc} />
+                        {techIcons.map(({ icon: Icon }, index) => (
+                            <Icon aria-keyshortcuts={String(index)} size={28} className="grayscale" />
                         ))}
                     </div>
                 </section>
@@ -78,43 +89,43 @@ export function Index({ ctx }: RequestInfo) {
 
 const techIcons = [
     {
-        icon: "devicon-c-plain",
+        icon: IconCPlain,
         desc: "C Lang",
     },
     {
-        icon: "devicon-embeddedc-plain",
+        icon: IconCEmbedded,
         desc: "Embedded C Programming",
     },
     {
-        icon: "devicon-splunk-original-wordmark text-4xl",
+        icon: IconSplunk,
         desc: "Data Platform",
     },
     {
-        icon: "devicon-python-plain",
+        icon: IconPython,
         desc: "Python",
     },
     {
-        icon: "devicon-typescript-plain",
+        icon: IconTS,
         desc: "TypeScript",
     },
     {
-        icon: "devicon-react-original",
+        icon: IconReact,
         desc: "React",
     },
     {
-        icon: "devicon-javascript-plain",
+        icon: IconJS,
         desc: "JavaScript",
     },
     {
-        icon: "devicon-bash-plain",
+        icon: IconBash,
         desc: "Bash Language",
     },
     {
-        icon: "devicon-postgresql-plain",
+        icon: IconPostgres,
         desc: "PostgreSQL",
     },
     {
-        icon: "devicon-railway-plain",
+        icon: IconRailway,
         desc: "Railway",
     },
 ];

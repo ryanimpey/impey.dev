@@ -1,5 +1,6 @@
-import Header from "@/app/components/Header";
 import styles from "./styles.css?url";
+
+import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 
 export const Document: React.FC<{ children: React.ReactNode }> = ({ children }) => (
@@ -10,7 +11,6 @@ export const Document: React.FC<{ children: React.ReactNode }> = ({ children }) 
             <title>@redwoodjs/starter-standard</title>
             <link rel="modulepreload" href="/src/client.tsx" />
             <link rel="stylesheet" href={styles} />
-            <link rel="stylesheet" href="devicon.min.css" />
         </head>
         <body className={`antialiased h-screen bg-background px-4 lg:px-0`}>
             <Header />
