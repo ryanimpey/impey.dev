@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
+
+@import "tailwindcss";
+@import "devicon/devicon.min.css";
+
+@theme {
+    --font-mono: "Geist Mono", monospace;
+}
