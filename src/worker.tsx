@@ -1,4 +1,4 @@
-import { defineApp, ErrorResponse } from "rwsdk/worker";
+import { defineApp, ErrorResponse, renderToStream } from "rwsdk/worker";
 import { route, render } from "rwsdk/router";
 import { Document } from "@/app/Document";
 import { setCommonHeaders } from "@/app/headers";
@@ -12,6 +12,9 @@ import { Policy } from "./app/pages/Policy";
 import { Projects } from "./app/pages/Projects";
 import { NotFound } from "./app/layouts/NotFound";
 export { SessionDurableObject } from "./session/durableObject";
+
+import FourZeroFour from "@/app/pages/404";
+import { renderToString } from "react-dom/server";
 
 export type AppContext = {
     session: Session | null;
@@ -53,7 +56,13 @@ export default defineApp([
         route("/projects", (req) => <Projects {...req} />),
         route("/policies", (req) => <Policies {...req} />),
         route("/policies/:slug", (req) => <Policy {...req} />),
+        route("*", async (req) => {
+            const html = await renderToStream(<FourZeroFour {...req} />, { Document: NotFound });
+            return new Response(html, { status: 404 });
+        }),
     ]),
-    // renderToStream not currently available
-    // render(Document, [route("/*", (req) => new Response( renderToStream(<NotFound />), { status: 404 }))]),
+    // // renderToStream not currently available
+    // route("/*", (req) => {
+    //     return renderToStream(<FourZeroFour {...req} />, { Document }).then((d) => new Response(d, { status: 404 });)
+    // }),
 ]);

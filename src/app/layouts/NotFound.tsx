@@ -15,7 +15,6 @@ export const NotFound: React.FC<{ children?: React.ReactNode }> = ({ children })
             <Header />
             <section id="root">{children}</section>
             <Footer />
-            <script>import("/src/client.tsx")</script>
         </body>
     </html>
 );

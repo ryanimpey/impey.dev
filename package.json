@@ -34,7 +34,7 @@
         "@tabler/icons-react": "^3.34.0",
         "@tailwindcss/vite": "^4.1.8",
         "devicons-react": "^1.4.1",
-        "rwsdk": "0.1.0-alpha.3",
+        "rwsdk": "^0.1.26",
         "tailwindcss": "^4.1.8",
         "zenblog": "^1.2.0"
     },
