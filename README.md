@@ -1,62 +1,36 @@
-# Standard RedwoodSDK Starter
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-This "standard starter" is the recommended implementation for RedwoodSDK. You get a Typescript project with:
+## Getting Started
 
-- Vite
-- database (Prisma via D1)
-- Session Management (via DurableObjects)
-- Passkey authentication (Webauthn)
-- Storage (via R2)
+First, run the development server:
 
-## Creating your project
-
-```shell
-npx create-rwsdk my-project-name
-cd my-project-name
-pnpm install
-```
-
-## Running the dev server
-
-```shell
+```bash
+npm run dev
+# or
+yarn dev
+# or
 pnpm dev
+# or
+bun dev
 ```
 
-Point your browser to the URL displayed in the terminal (e.g. `http://localhost:5173/`). You should see a "Hello World" message in your browser.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Deploying your app
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Wrangler Setup
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Within your project's `wrangler.jsonc`:
+## Learn More
 
-- Replace the `__change_me__` placeholders with a name for your application
+To learn more about Next.js, take a look at the following resources:
 
-- Create a new D1 database:
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-```shell
-npx wrangler d1 create my-project-db
-```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-Copy the database ID provided and paste it into your project's `wrangler.jsonc` file:
+## Deploy on Vercel
 
-```jsonc
-{
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "my-project-db",
-      "database_id": "your-database-id",
-    },
-  ],
-}
-```
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Authentication Setup
-
-For authentication setup and configuration, including optional bot protection, see the [Authentication Documentation](https://docs.rwsdk.com/core/authentication).
-
-## Further Reading
-
-- [RedwoodSDK Documentation](https://docs.rwsdk.com/)
-- [Cloudflare Workers Secrets](https://developers.cloudflare.com/workers/runtime-apis/secrets/)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
