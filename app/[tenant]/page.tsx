@@ -9,8 +9,25 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Header } from "@/components/shared/Header";
 import { Footer } from "@/components/shared/Footer";
 import Link from "next/link";
+import Head from "next/head";
+import { Metadata } from "next";
 
-export default function Home() {
+type Props = {
+    params: Promise<{ tenant: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    // read route params
+    const { tenant } = await params;
+
+    return {
+        title: tenant,
+    };
+}
+
+export default async function Home({ params }: Props) {
+    const { tenant } = await params;
+
     return (
         <Fragment>
             <Header />
