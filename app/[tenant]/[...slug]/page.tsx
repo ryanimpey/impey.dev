@@ -25,16 +25,20 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
         return notFound();
     }
 
-    const article = await articles.findOne(all.data.at(0)!.documentId);
-    const updatedAt = new Date(article.data.updatedAt);
+    const article = all.data.at(0);
+    if (typeof article === "undefined") {
+        return notFound();
+    }
+
+    const updatedAt = new Date(article.updatedAt);
 
     return (
         <main className="py-12">
             <section className="max-w-xl mx-auto">
-                <h1 className="text-3xl lg:text-3xl font-bold leading-tight md:leading-tight">{article.data.title}</h1>
+                <h1 className="text-3xl lg:text-3xl font-bold leading-tight md:leading-tight">{article.title}</h1>
                 <h6 className="leading-tight md:leading-tight">Last updated {updatedAt.toDateString()}</h6>
                 <article className="py-8">
-                    <BlockRendererClient content={article.data.content} />
+                    <BlockRendererClient content={article.content} />
                 </article>
             </section>
         </main>
