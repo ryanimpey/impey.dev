@@ -14,6 +14,9 @@ importers:
       '@radix-ui/react-slot':
         specifier: ^1.2.3
         version: 1.2.3(@types/react@19.1.12)(react@19.1.0)
+      '@strapi/blocks-react-renderer':
+        specifier: ^1.0.2
+        version: 1.0.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@strapi/client':
         specifier: ^1.5.0
         version: 1.5.0
@@ -411,6 +414,12 @@ packages:
     peerDependenciesMeta:
       '@types/react':
         optional: true
+
+  '@strapi/blocks-react-renderer@1.0.2':
+    resolution: {integrity: sha512-pRV/WMreo5wyrLg7J0pw1DM9lg8U8m+QA7Bd8CPN3beUBTdDhYrFTTNZh3XveEdnURZNJu1X0aWXAg4SzVg7QA==}
+    peerDependencies:
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   '@strapi/client@1.5.0':
     resolution: {integrity: sha512-W3+GRtm0RyRWbOeMeUl0JQylCJVjgs58mmN20kMjnmxzcw5L4lxgdxCMIjc1fLtOEcpo3qlzf96c4Hl/lJFSHA==}
@@ -1127,6 +1136,11 @@ snapshots:
       react: 19.1.0
     optionalDependencies:
       '@types/react': 19.1.12
+
+  '@strapi/blocks-react-renderer@1.0.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
 
   '@strapi/client@1.5.0':
     dependencies:
