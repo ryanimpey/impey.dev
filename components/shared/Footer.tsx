@@ -116,7 +116,7 @@ export function Footer() {
                 <div className="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-slate-400 text-sm">© 2025 Aisle Guide. Made in the uk 🇬🇧</p>
                     <div className="flex items-center gap-6 text-sm">
-                        <a href="#" className="text-slate-400 hover:text-white transition-colors">
+                        {/* <a href="#" className="text-slate-400 hover:text-white transition-colors">
                             Privacy Policy
                         </a>
                         <a href="#" className="text-slate-400 hover:text-white transition-colors">
@@ -124,7 +124,7 @@ export function Footer() {
                         </a>
                         <a href="#" className="text-slate-400 hover:text-white transition-colors">
                             Contact
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>
